@@ -11,88 +11,124 @@
   </head>
 
   <body>
-    <header>
+    <header id="back-to-top">
       <form role="search" method="POST" action="search.php">
         <label for="site-search"></label>
-        <input type="search" 
-        id="site-search" 
-        name="site-search" 
-        aria-label="Recherche de contenu sur le site"
-        placeholder="Recherche"
-        >
+        <input type="search" id="site-search" name="site-search" aria-label="Recherche de contenu sur le site"
+          placeholder="Recherche">
         <button type="submit"><i class="fas fa-search"></i></button>
       </form>
-      
+
       <div class="title-logo">
-        <h1>H2</h1>
-        <img src="ressources/images/slime-eau.png" alt="Logo slime Aquatique">
+        <a href="#"><h1>H2</h1>
+        <img src="ressources/images/slime-eau.png" alt="Logo slime Aquatique"></a>
       </div>
       <div class="header_menu-btn">
         <nav>
           <ul>
             <li>
-              <a href="#">Évènement</a>
+              <a href="#">NOS ACTIONS</a>
             </li>
             <li>
-              <a href="#">Qui sommes nous ?</a>
+              <a href="#">L'ONG</a>
             </li>
             <li>
-              <a href="#">Recrutement</a>
+              <a href="#">ÉVÈNEMENTS</a>
+            </li>
+            <li>
+              <a href="#">NOS RÉSULTATS</a>
+            </li>
+            <li>
+              <a href="#">AGIT AVEC NOUS</a>
             </li>
           </ul>
         </nav>
       </div>
-      <img src="ressources/images/ondulation-eau.jpg" alt="Image ondulation d'eau">
+      <img src="ressources/images/ondulation-eau-1.jpg" alt="Image ondulation d'eau 1">
+      <img src="ressources/images/ondulation-eau-2.jpg" alt="Image ondulation d'eau 2">
     </header>
 
     <main>
-      <div class="section-top">
-        <p>
-          PERMETTRE L’ACCES A L’EAU POTABLE PAR LE FORAGE DE PUITS AINSI QUE LA MISE EN PLACE DE 
-          SYSTEMES D'IRRIGATION
-        </p>
-        <p>
-          L’eau est une ressource indispensable pour tout être humain. Il est donc impossible de 
-          vivre dans des conditions décentes sans eau potable. L’UNICEF estime que 2,1 milliards de 
-          personnes dans le monde sont encore privées d’un point élémentaire d’eau potable, 
-          disponible rapidement et exempt de toute contamination.
-        </p>
-      </div>
-      <div class="section-center">
-        <p>
-          A CHAQUE MINUTE, CINQ PERSONNES DÉCÈDENT PAR MANQUE D’EAU POTABLE
-        </p>
-        <p>
-          Parmi ces personnes, l’ONU estime que 844 millions ne disposent <strong>pas de service 
-          d’eau à moins de trente minutes de marche</strong>. Dans le monde, cinq personnes meurent 
-          à chaque minute à cause de ce fléau ! « Très souvent, ce sont les enfants qui sont chargés 
-          d’aller chercher l’eau très loin du village avant d’aller à l’école, sans être sûr 
-          qu’elle soit potable ».
-        </p>
-        <img src="ressources/images/aide-humanitaire-puit-1.jpg" alt="Image enfant qui puise de 
-        l'eau au puit">
-        <p>
-          H2O se mobilise pour fournir de l’eau potable en urgence en cas de crise humanitaire, 
-          notre ONG reste sur place pour pérenniser l’action et assurer avec des puits l’autonomie 
-          des communautés.
-        </p>
-      </div>
-      <div class="section-btm">
-        <p>
-          H2O A FORÉ PLUS DE 1550 PUITS ET MIS EN PLACE PLUS DE 3500 SYSTEMES D'IRRIGATION
-        </p>
-        <p>
-          En tant qu’acteur humanitaire majeur, <span><a href="#">H2O se mobilise</a></span> les 
-          populations en situation d’extrême vulnérabilité. Depuis sa création, notre <strong>ONG a 
-          foré ou réhabilité plus de 1550 puits</strong> dans des pays comme le Tchad, le Mali, 
-          dans des camps de réfugiés Rohingyas au Bangladesh, etc. Nos équipes s’appuient sur une 
-          <strong>expertise forgée au fil des années et reconnue par nos pairs localement et à 
-          l’international</strong>. En 2021, H2O a prévu de continuer à creuser des puits dans des 
-          régions écartées des réseaux d’approvisionnement.
-        </p>
-        <img src="ressources/images/aide-humanitaire-puit-2.png" alt="Image femme qui puise de 
-        l'eau au puit">
-      </div>
+      <section class="top">
+        <div class="article-top top">
+          <img src="ressources/images/don-eau-1.jpg" alt="Photo don d'eau">
+          <h2><a href="#">Distribution d'eau en bidon</a></h2>
+          <p>
+            H2O renforce ses nombreuses actions destinées à assurer la sécurité alimentaire des bénéficiaires. L'an
+            dernier, vous aviez répondu présent : retour sur les bienfaits apportés par vos dons...
+          </p>
+        </div>
+        <div class="article-top center">
+          <img src="ressources/images/fontaine-eau-enfant-1.jpg" alt="Photo enfant qui boit de l'eau">
+          <h2><a href="#">WAQF</a></h2>
+          <p>
+            H2O est en mesure de développer de nombreux projets humanitaires en France et dans le monde, c'est avant tout
+            grâce à la générosité de ses donateurs...
+          </p>
+        </div>
+        <div class="article-top btm">
+          <img src="ressources/images/legs-donation-1.jpg" alt="Image legs donations">
+          <h2><a href="#">LEGS & DONATIONS</a></h2>
+          <p>
+            Parce que le legs est une démarche importante qui s'inscrit sur le long terme, il est essentiel d'avoir un
+            accompagnement personnalisé...
+          </p>
+        </div>
+      </section>
+      <section class="center">
+        <img src="ressources/images/shema-1.png" alt="Image shéma">
+        <div class="top left">
+          <h3>Transparence</h3>
+          <p>
+            H2O vous informe quotidiennement sur Facebook, Instagram, Twitter sur l'utilisation des fonds que vous nous confiez. Tous les moyens sont bons pour vous rapprocher au plus près de votre don.
+          </p>
+        </div>
+        <div class="top right">
+          <h2>Accessibilité Simplicité</h2>
+          <p>
+            Parce que dans l'aide au développement, il n'y a pas de petits dons mais seulement de grandes œuvres! Contribuez à nos campagnes dès 1€ en toute simplicité. En quelques clics, vous pouvez participer à nos campagnes les plus ambitieuse.
+          </p>
+        </div>
+        <div class="btm left">
+          <h2>Dévotion</h2>
+          <p>
+            Toutes nos équipes sont dévouées à cette noble cause, qui permet grâce à vos dons de pouvoir construire des puits durable lorsque cela est possible ou de fournir les ressources en eau et en nourriture aux personnes les plus démunis.
+          </p>
+        </div>
+        <div class="btm right">
+          <h2>Suivi Personnalisation</h2>
+          <p>
+            Vous êtes assisté par notre équipe étape par étape dans la réalisation de votre projet eau. Offrez un puit seul ou à plusieurs et donnez lui le nom de votre choix!
+          </p>
+        </div>
+      </section>
+      <section class="btm">
+        <div class="title">
+          <h3>Ils parlent de nous</h3>
+          <h3>Ils parlent de nous</h3>
+        </div>
+        <div class="pub">
+          <div class="top">
+            <a href="#">
+              <img src="ressources/images/logo-la-tribune-300x150.png" alt="Logo la tribune">
+            </a>
+            <a href="#">
+              <img src="ressources/images/L°LPJ-V2-CMJN-2-277x300.png" alt="Logo le petit journal.com">
+            </a>
+            <a href="#">
+              <img src="ressources/images/Logo-AfricaMutandi-PNG-2-1-300x159.png" alt="Logo africa mutandi">
+            </a>
+          </div>
+          <div class="btm">
+            <a href="#">
+              <img src="ressources/images/cnews-1-1-300x75.png" alt="Logo c news">
+            </a>
+            <a href="#">
+              <img src="ressources/images/mediapart-1-300x54.png" alt="Logo mediapart">
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="footer-menu">
@@ -107,7 +143,7 @@
                 <a href="#">Mention légales</a>
               </li>
               <li>
-                <a href="#" #>Plan du site</a>
+                <a href="#">Plan du site</a>
               </li>
             </ul>
           </nav>
@@ -152,6 +188,9 @@
         </div>
       </div>
     </footer>
+    <div class="back-to-top">
+      <a href="#back-to-top">RETOUR</a>
+    </div>
   </body>
 
-</html>
+</html
