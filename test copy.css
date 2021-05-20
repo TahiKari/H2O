@@ -1,0 +1,93 @@
+/*html, body {
+  margin: 0;
+  padding: 0;
+  background: burlywood;
+}*/
+
+.toggle_btn {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  margin: 5px 10px 0 0;
+  cursor: pointer;
+}
+
+.toggle_btn span {
+  height: 3px;
+  background: royalblue;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+.toggle_btn span::before {
+  content: '';
+  height: 3px;
+  background: royalblue;
+  width: 100%;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+.toggle_btn span::after {
+  content: '';
+  height: 3px;
+  background: royalblue;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+/*.menu {
+  height: 1000px;
+  background: royalblue;
+  width: 200px;
+}*/
+
+/*.menu a {
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  display: block;
+  padding-top: 30px;
+  text-decoration: none;
+}*/
+
+.menu {
+  margin: 40px 0 0 -200px;
+  transition-duration: 0.5s;
+  background: #000;
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  color: aqua;
+  background: rgb(116, 116, 116);
+  margin: 5px 0;
+}
+
+.menu a:hover {
+  transform: scale(1.1);
+}
+
+.menu-checkbox:checked ~ .menu {
+  margin-left: 2px;
+  transition-duration: 0.5s;
+  display: block;
+}
+
+.menu-checkbox {
+  position: absolute;
+  top: -5000px;
+}
+
