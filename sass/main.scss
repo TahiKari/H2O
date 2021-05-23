@@ -1,0 +1,213 @@
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+$color1: #009fe3;
+$color2: #47494a;
+$color3: #31424a;
+$color4: #fff;
+$color5: #c1c7c9;
+$color6: #909596;
+
+/* Header */
+header {
+  background: $color3;
+  height: 440px;
+}
+
+.header-top {
+  padding: 50px 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  .logo img {
+    width: 110px;
+  }
+  .logo {
+    order: 2;
+    position: absolute;
+    left: 80px;
+  }
+  .main-navigation {
+    order: 1;
+    height: 200px;
+    margin-left: 5px;
+    .menu-checkbox:checked ~ .menu {
+      margin-left: 0;
+      transition-duration: 0.5s;
+      display: block;
+    }
+    .menu-checkbox {
+      position: absolute;
+      top: -5000px;
+    }
+    label img {
+      position: relative;
+      top: 7px;
+      width: 40px;
+    }
+    .menu {
+      margin: 70px 0 0 -350px;
+      transition-duration: 0.5s;
+      background: $color3;
+      width: 150px;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+    }
+    .menu a {
+      display: block;
+      text-decoration: none;
+      color: $color1;
+      background: $color3;
+      margin: 5px 25px;
+    }
+    
+    .menu a:hover {
+      transform: scaleY(1.5);
+    }
+
+    .toggle_btn {
+      height: 40px;
+      width: 40px;
+      position: relative;
+      margin: 5px 10px 0 0;
+      cursor: pointer;
+    }
+  }
+  .don {
+    order: 3;
+    width: 100px;
+    height: 45px;
+    position: relative;
+    top: 4px;
+    border: 1px solid $color1;
+    background: $color3;
+    color: $color1;
+    border-radius: 25px;
+  }
+  .search {
+    order: 4;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    width: 93%;
+    input {
+      width: 90%;
+      height: 40px;
+      border-radius: 20px;
+      border: none;
+    }
+    input::placeholder {
+      font-size: 1.5em;
+      position: relative;
+      top: 2px;
+      left: 10px;
+    }
+    .fa-search {
+      margin-top: 2px;
+      font-size: 1.4em;
+    }
+    button {
+      position: absolute;
+      right: 35px;
+      top: 7px;
+      border: none;
+      border-radius: 50%;
+      background: $color4;
+    }
+  }
+}
+
+.caroussel {
+  position: relative;
+  top: -60px;
+  width: 318px;
+  overflow: auto;
+  .images img {
+    width: 320px;
+    height: 251px;
+  }
+  .images {
+    display: flex;
+    animation-duration: 15s;
+    animation-name: mesImages1;
+    animation-iteration-count: infinite;
+  }
+  @keyframes mesImages1 {
+    0%, 25%{
+      transform: translateX(0);
+    }
+    30%, 75% {
+      transform: translateX(-320px);
+    }
+    80%, 100% {
+      transform: translateX(0);
+    }
+  }
+}
+
+/* Main */
+.top {
+  margin-top: 50px;
+  .card {
+    margin: 10px 20px;
+    padding: 30px;
+    box-shadow: 1px 1px 15px 1px $color5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color1;
+    a {
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+    }
+    a:visited {
+      color: $color1;
+    }
+  }
+}
+
+
+.center {
+  width: 100%;
+  margin: 0 auto;
+  .container {
+    background: url("../../ressources/images/main-livre-862x1166.png") no-repeat;
+    background-size: 318px 560px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 13px;
+    padding: 20px 0 20px;
+    .art {
+      width: 140px;
+      height: 250px;
+      padding: 5px;
+      text-align: center;
+      position: relative;
+      top: -15px;
+    }
+  }
+}
+
+
+
+
+
+
