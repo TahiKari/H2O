@@ -41,6 +41,10 @@ h1 {
   right: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header-top {
   padding: 50px 20px 0;
   display: flex;
@@ -354,6 +358,18 @@ footer {
   color: $color1;
 }
 
+footer p {
+  margin-bottom: 0;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  text-align: center;
+}
+
 footer a {
   color: $color1;
 }
@@ -362,8 +378,16 @@ footer a:visited {
   color: $color1;
 }
 
-.footer-menu_infos {
+@mixin flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.footer-menu_infos, .footer-menu_presse, .footer-menu_faq {
+
+  @include flex-col-center;
 }
 
 

@@ -34,6 +34,10 @@ h1 {
   right: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header-top {
   padding: 50px 20px 0;
   display: flex;
@@ -346,12 +350,31 @@ footer {
   color: #009fe3;
 }
 
+footer p {
+  margin-bottom: 0;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  text-align: center;
+}
+
 footer a {
   color: #009fe3;
 }
 
 footer a:visited {
   color: #009fe3;
+}
+
+.footer-menu_infos, .footer-menu_presse, .footer-menu_faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .back-to-top {
