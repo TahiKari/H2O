@@ -204,6 +204,7 @@ label img {
   display: inline-block;
   text-decoration: none;
   text-align: center;
+  color: #009fe3;
 }
 
 .card a:visited {
