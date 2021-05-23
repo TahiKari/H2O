@@ -1,211 +1,209 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>H2O</title>
-  <link rel="stylesheet" href="ressources/fontawesome-free-5.15.3-web/css/all.css">
-  <link rel="stylesheet" type="text/css" href="public/css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H2O</title>
+    <link rel="stylesheet" href="ressources/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
+  </head>
 
-<body>
-  <header id="back-to-top">
-    <div class="header-top">
-      <a class="logo" href="#">
-        <img src="ressources/images/title-H2O.png" alt="Logo slime Aquatique">
-      </a>
-      <nav class="main-navigation">
-        <input id="menu-checkbox" type="checkbox" class="menu-checkbox">
-        <label for="menu-checkbox" class="toggle_btn">
-          <img src="ressources/images/Btn-Menu.png" alt="Image bouton menu">
-        </label>
-        <div class="menu">
-          <a href="#">NOS ACTIONS</a>
-          <a href="#">L'ONG</a>
-          <a href="#">ÉVÈNEMENTS</a>
-          <a href="#">NOS RÉSULTATS</a>
-          <a href="#">AGIT AVEC NOUS</a>
+  <body>
+    <header id="back-to-top">
+      <h1>L'eau c'est la vie</h1>
+      <div class="header-top">
+        <a class="logo" href="#">
+          <img src="ressources/images/title-H2O.png" alt="Logo slime Aquatique">
+        </a>
+        <nav class="main-navigation">
+          <input id="menu-checkbox" type="checkbox" class="menu-checkbox">
+          <label for="menu-checkbox" class="toggle_btn">
+            <img src="ressources/images/Btn-Menu.png" alt="Image bouton menu">
+          </label>
+          <div class="menu">
+            <a href="#">NOS ACTIONS</a>
+            <a href="#">L'ONG</a>
+            <a href="#">ÉVÈNEMENTS</a>
+            <a href="#">NOS RÉSULTATS</a>
+            <a href="#">AGIT AVEC NOUS</a>
+          </div>
+        </nav>
+        <button class="don" type="submit">Faire un don</button>
+        <div class="search">
+          <form role="search" method="POST" action="search.php">
+            <label for="site-search"></label>
+            <input type="search" id="site-search" name="site-search" aria-label="Recherche de contenu sur le site"
+              placeholder="Recherche">
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
         </div>
-      </nav>
-      <button class="don" type="submit">Faire un don</button>
-      <div class="search">
-        <form role="search" method="POST" action="search.php">
-          <label for="site-search"></label>
-          <input type="search" 
-          id="site-search" 
-          name="site-search" 
-          aria-label="Recherche de contenu sur le site"
-          placeholder="Recherche">
-          <button type="submit"><i class="fas fa-search"></i></button>
-        </form>
       </div>
-    </div>
-    <div class="caroussel">
-      <div class="images">
-        <img src="ressources/images/ondulation-eau-1.jpg" alt="Image ondulation d'eau 1">
-        <img src="ressources/images/ondulation-eau-2.jpg" alt="Image ondulation d'eau 2">
+      <div class="caroussel">
+        <div class="images">
+          <img src="ressources/images/ondulation-eau-1.jpg" alt="Image ondulation d'eau 1">
+          <img src="ressources/images/ondulation-eau-2.jpg" alt="Image ondulation d'eau 2">
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <section class="top">
-      <div class="card">
-        <img src="ressources/images/don-eau-1.jpg" alt="Photo don d'eau">
-        <h2><a href="#">Distribution d'eau en bidon</a></h2>
-        <p>
-          H2O renforce ses nombreuses actions destinées à assurer la sécurité alimentaire des
-          bénéficiaires. L'an dernier, vous aviez répondu présent : retour sur les bienfaits
-          apportés par vos dons...
-        </p>
-      </div>
-      <div class="card">
-        <img src="ressources/images/fontaine-eau-enfant-1.jpg" alt="Photo enfant qui boit de 
-              l'eau">
-        <h2><a href="#">WAQF</a></h2>
-        <p>
-          H2O est en mesure de développer de nombreux projets humanitaires en France et dans le
-          monde, c'est avant tout grâce à la générosité de ses donateurs...
-        </p>
-      </div>
-      <div class="card">
-        <img src="ressources/images/legs-donation-1.jpg" alt="Image legs donations">
-        <h2><a href="#">LEGS & DONATIONS</a></h2>
-        <p>
-          Parce que le legs est une démarche importante qui s'inscrit sur le long terme, il est
-          essentiel d'avoir un accompagnement personnalisé...
-        </p>
-      </div>
-    </section>
-    <section class="center">
-      <img src="ressources/images/shema-1.png" alt="Image shéma">
-      <div class="container">
-        <div class="art top-left">
-          <h3>Transparence</h3>
+    <main>
+      <section class="top">
+        <h2>Nos actions</h2>
+        <div class="card">
+          <img src="ressources/images/don-eau-1.jpg" alt="Photo don d'eau">
+          <h3><a href="#">Distribution d'eau en bidon</a></h3>
           <p>
-            H2O vous informe quotidiennement sur Facebook, Instagram, Twitter sur l'utilisation des
-            fonds que vous nous confiez. Tous les moyens sont bons pour vous rapprocher au plus
-            près de votre don.
+            H2O renforce ses nombreuses actions destinées à assurer la sécurité alimentaire des
+            bénéficiaires. L'an dernier, vous aviez répondu présent : retour sur les bienfaits
+            apportés par vos dons...
           </p>
         </div>
-        <div class="art top-right">
-          <h3>Dévotion</h3>
+        <div class="card">
+          <img src="ressources/images/fontaine-eau-enfant-1.jpg" alt="Photo enfant qui boit de 
+                  l'eau">
+          <h3><a href="#">WAQF</a></h3>
           <p>
-            Toutes nos équipes sont dévouées à cette noble cause, qui permet grâce à vos dons de
-            pouvoir construire des puits durable lorsque cela est possible ou de fournir les
-            ressources en eau et en nourriture aux personnes les plus démunis.
+            H2O est en mesure de développer de nombreux projets humanitaires en France et dans le
+            monde, c'est avant tout grâce à la générosité de ses donateurs...
           </p>
         </div>
-        <div class="art btm-left">
-          <h3>Accessibilité Simplicité</h3>
+        <div class="card">
+          <img src="ressources/images/legs-donation-1.jpg" alt="Image legs donations">
+          <h3><a href="#">LEGS & DONATIONS</a></h3>
           <p>
-            Parce que dans l'aide au développement, il n'y a pas de petits dons mais seulement de
-            grandes œuvres! Contribuez à nos campagnes dès 1€ en toute simplicité. En quelques
-            clics, vous pouvez participer à nos campagnes les plus ambitieuse.
+            Parce que le legs est une démarche importante qui s'inscrit sur le long terme, il est
+            essentiel d'avoir un accompagnement personnalisé...
           </p>
         </div>
-        <div class="art btm-right">
-          <h3>Suivi Personnalisation</h3>
-          <p>
-            Vous êtes assisté par notre équipe étape par étape dans la réalisation de votre projet
-            eau. Offrez un puit seul ou à plusieurs et donnez lui le nom de votre choix!
-          </p>
+      </section>
+      <section class="center">
+        <h2>Confiance et organisation</h2>
+        <img src="ressources/images/shema-1.png" alt="Image shéma">
+        <div class="center-container">
+          <div class="art">
+            <h3>Transparence</h3>
+            <p>
+              H2O vous informe quotidiennement sur Facebook, Instagram, Twitter sur l'utilisation des
+              fonds que vous nous confiez. Tous les moyens sont bons pour vous rapprocher au plus
+              près de votre don.
+            </p>
+          </div>
+          <div class="art">
+            <h3>Dévotion</h3>
+            <p>
+              Toutes nos équipes sont dévouées à cette noble cause, qui permet grâce à vos dons de
+              pouvoir construire des puits durable lorsque cela est possible ou de fournir les
+              ressources en eau et en nourriture aux personnes les plus démunis.
+            </p>
+          </div>
+          <div class="art">
+            <h3>Accessibilité Simplicité</h3>
+            <p>
+              Parce que dans l'aide au développement, il n'y a pas de petits dons mais seulement de
+              grandes œuvres! Contribuez à nos campagnes dès 1€ en toute simplicité. En quelques
+              clics, vous pouvez participer à nos campagnes les plus ambitieuse.
+            </p>
+          </div>
+          <div class="art">
+            <h3>Suivi Personnalisation</h3>
+            <p>
+              Vous êtes assisté par notre équipe étape par étape dans la réalisation de votre projet
+              eau. Offrez un puit seul ou à plusieurs et donnez lui le nom de votre choix!
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="btm">
+        <h2>Ils parlent de nous</h2>
+        <span>Ils parlent de nous</span>
+        <div class="pub">
+          <div class="pub-top">
+            <a href="#">
+              <img src="ressources/images/logo-la-tribune-300x150.png" alt="Logo la tribune">
+            </a>
+            <a href="#">
+              <img src="ressources/images/L°LPJ-V2-CMJN-2-277x300.png" alt="Logo le petit 
+                          journal.com">
+            </a>
+            <a href="#">
+              <img src="ressources/images/Logo-AfricaMutandi-PNG-2-1-300x159.png" alt="Logo africa 
+                          mutandi">
+            </a>
+          </div>
+          <div class="pub-btm">
+            <a href="#">
+              <img src="ressources/images/cnews-1-1-300x75.png" alt="Logo c news">
+            </a>
+            <a href="#">
+              <img src="ressources/images/mediapart-1-300x54.png" alt="Logo mediapart">
+            </a>
+          </div>
         </div>
       </div>
-    </section>
-    <section class="btm">
-      <div class="title">
-        <h3>Ils parlent de nous</h3>
-        <h3>Ils parlent de nous</h3>
-      </div>
-      <div class="pub">
-        <div class="top">
-          <a href="#">
-            <img src="ressources/images/logo-la-tribune-300x150.png" alt="Logo la tribune">
-          </a>
-          <a href="#">
-            <img src="ressources/images/L°LPJ-V2-CMJN-2-277x300.png" alt="Logo le petit 
-                  journal.com">
-          </a>
-          <a href="#">
-            <img src="ressources/images/Logo-AfricaMutandi-PNG-2-1-300x159.png" alt="Logo africa 
-                  mutandi">
-          </a>
+    </main>
+    <footer>
+      <div class="footer-menu">
+        <div class="footer-menu_infos">
+          <p>PLUS D'INFOS</p>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <a href="#">Mention légales</a>
+              </li>
+              <li>
+                <a href="#">Plan du site</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="btm">
-          <a href="#">
-            <img src="ressources/images/cnews-1-1-300x75.png" alt="Logo c news">
-          </a>
-          <a href="#">
-            <img src="ressources/images/mediapart-1-300x54.png" alt="Logo mediapart">
-          </a>
+        <div class="footer-menu_faq">
+          <p>FAQ</p>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Faq covid-19</a>
+              </li>
+              <li>
+                <a href="#">Réduction fiscale</a>
+              </li>
+              <li>
+                <a href="#">Parrainage individuel</a>
+              </li>
+              <li>
+                <a href="#">Faq H2O</a>
+              </li>
+              <li>
+                <a href="#">Promesse de dons</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-menu_presse">
+          <p>PRESSE</p>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Contact presse</a>
+              </li>
+              <li>
+                <a href="#">Communiqués de presse</a>
+              </li>
+              <li>
+                <a href="#">Actualités</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </section>
-  </main>
-  <footer>
-    <div class="footer-menu">
-      <div class="footer-menu_infos">
-        <p>PLUS D'INFOS</p>
-        <nav>
-          <ul>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-            <li>
-              <a href="#">Mention légales</a>
-            </li>
-            <li>
-              <a href="#">Plan du site</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="footer-menu_faq">
-        <p>FAQ</p>
-        <nav>
-          <ul>
-            <li>
-              <a href="#">Faq covid-19</a>
-            </li>
-            <li>
-              <a href="#">Réduction fiscale</a>
-            </li>
-            <li>
-              <a href="#">Parrainage individuel</a>
-            </li>
-            <li>
-              <a href="#">Faq H2O</a>
-            </li>
-            <li>
-              <a href="#">Promesse de dons</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="footer-menu_presse">
-        <p>PRESSE</p>
-        <nav>
-          <ul>
-            <li>
-              <a href="#">Contact presse</a>
-            </li>
-            <li>
-              <a href="#">Communiqués de presse</a>
-            </li>
-            <li>
-              <a href="#">Actualités</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    </footer>
+    <div class="back-to-top">
+      <a href="#back-to-top">RETOUR</a>
     </div>
-  </footer>
-  <div class="back-to-top">
-    <a href="#back-to-top">RETOUR</a>
-  </div>
-</body>
+  </body>
 
 </html>
