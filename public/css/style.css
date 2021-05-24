@@ -18,30 +18,22 @@ img {
   width: 100%;
 }
 
-/* Header */
-header {
-  background: #31424a;
-  max-height: 440px;
-  width: 100%;
-  height: auto;
-}
-
-h1 {
-  margin: 0;
-  position: absolute;
-  text-align: center;
-  color: #009fe3;
-  top: 170px;
-  left: 0;
-  right: 0;
-}
-
 a {
   text-decoration: none;
   color: #009fe3;
 }
 a:hover {
   color: #009fe3;
+}
+
+.primary {
+  color: #009fe3;
+}
+
+/* Header */
+header {
+  background: #31424a;
+  width: 100%;
 }
 
 .header-top {
@@ -53,13 +45,13 @@ a:hover {
 }
 
 .logo img {
-  width: 110px;
+  width: 45%;
 }
 
 .logo {
   order: 2;
   position: absolute;
-  left: 80px;
+  left: 25%;
 }
 
 .main-navigation {
@@ -82,14 +74,13 @@ a:hover {
 label img {
   position: relative;
   top: 7px;
-  width: 40px;
+  width: 75%;
 }
 
 .menu {
   margin: 70px 0 0 -3000px;
   transition-duration: 0.5s;
   background: #31424a;
-  width: 150px;
   position: absolute;
   left: 0;
   width: 100%;
@@ -170,12 +161,19 @@ label img {
   color: #009fe3;
 }
 
-.caroussel {
+h1 {
+  margin: 0;
   position: absolute;
-  top: 230px;
-  max-width: auto;
+  text-align: center;
+  color: #009fe3;
+  top: 30%;
+  left: 0;
+  right: 0;
+}
+
+.caroussel {
+  width: 100%;
   overflow: auto;
-  margin-bottom: 50px;
 }
 
 .images img {
@@ -244,13 +242,13 @@ label img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  font-size: 13px;
+  font-size: 0.8em;
   padding: 20px 0 20px;
 }
 
 .art {
-  width: 140px;
-  height: 250px;
+  width: 45%;
+  height: auto;
   padding: 5px;
   text-align: center;
   position: relative;
@@ -258,7 +256,7 @@ label img {
 }
 
 .btm {
-  height: 350px;
+  height: auto;
   background: no-repeat url("../../ressources/images/bg-rectangle-blue-320x750.png");
   background-size: 100% 350px;
 }
@@ -275,11 +273,14 @@ label img {
 }
 
 .btm span {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
   position: relative;
   top: 30px;
-  left: 30px;
+  left: -35px;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.5em;
   opacity: 0.5;
 }
 
