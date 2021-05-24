@@ -45,10 +45,9 @@ h1 {
 a {
   text-decoration: none;
   color: $color1;
-}
-
-a:visited {
-  color: $color1;
+  &:hover {
+    color: $color1;
+  }
 }
 
 .header-top {
@@ -131,6 +130,11 @@ label img {
   background: $color2;
   color: $color1;
   border-radius: 25px;
+}
+
+.don:active {
+  font-weight: bold;
+  border: 2px solid $color1;
 }
 
 .search {

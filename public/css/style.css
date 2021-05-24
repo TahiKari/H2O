@@ -39,8 +39,7 @@ a {
   text-decoration: none;
   color: #009fe3;
 }
-
-a:visited {
+a:hover {
   color: #009fe3;
 }
 
@@ -124,6 +123,11 @@ label img {
   background: #31424a;
   color: #009fe3;
   border-radius: 25px;
+}
+
+.don:active {
+  font-weight: bold;
+  border: 2px solid #009fe3;
 }
 
 .search {
