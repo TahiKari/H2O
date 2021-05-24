@@ -223,10 +223,14 @@ label img {
   margin-top: 20px;
 }
 
+.center img {
+  display: none;
+}
+
 .center h2 {
   color: #009fe3;
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .center-container {
