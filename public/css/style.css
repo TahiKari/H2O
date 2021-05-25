@@ -406,6 +406,10 @@ footer li {
     width: 100%;
   }
 
+  .menu {
+    margin-top: 100px;
+  }
+
   .don {
     top: -11px;
     right: 30px;
