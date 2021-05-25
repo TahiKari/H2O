@@ -33,6 +33,10 @@ a {
   }
 }
 
+p, h1, h2, h3, .btm span {
+  text-align: center;
+}
+
 .primary {
   color: $color1;
 }
@@ -259,7 +263,6 @@ h1 {
   width: 45%;
   height: auto;
   padding: 5px;
-  text-align: center;
   position: relative;
   top: -15px;
 }
@@ -283,7 +286,6 @@ h1 {
 
 .btm span {
   display: inline-block;
-  text-align: center;
   width: 100%;
   position: relative;
   top: 30px;
@@ -401,6 +403,10 @@ footer li {
 }
 
 @media screen and (min-width: 768px) {
+  .header-top {
+    height: 265px;
+  }
+  
   .logo img {
     width: 60%;
   }
@@ -422,6 +428,7 @@ footer li {
     width: 30%;
     height: 70px;
     border-radius: 40px;
+    font-size: 1.5em;
   }
 
   .search input {
@@ -452,7 +459,33 @@ footer li {
   }
 
   h1 {
-    top: 210px;
+    top: 230px;
+    font-size: 2.5em;
+  }
+
+  .top-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "card-1 card-1 card-1 card-2 card-2 card-2"
+    ". card-3 card-3 card-3 card-3 .";
+  }
+
+  .card {
+    margin: 5px;
+  }
+
+  .card-1 {
+    grid-area: card-1;
+  }
+
+  .card-2 {
+    grid-area: card-2;
+  }
+
+  .card-3 {
+    grid-area: card-3;
   }
 }
 
