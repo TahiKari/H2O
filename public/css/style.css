@@ -1059,7 +1059,8 @@ footer li {
   }
 
   .center-container {
-    background-size: 100vw;
+    height: 400px;
+    background-size: 100vw 400px;
     font-size: 1em;
   }
 
