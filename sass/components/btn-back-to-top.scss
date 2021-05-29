@@ -15,3 +15,53 @@
     right: 3vw;
   }
 }
+
+@media screen and (min-width: 505px) {
+  .back-to-top {
+    right: 2.5vw;
+  }
+
+  .back-to-top img {
+    width: 9vw;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .back-to-top {
+    right: 2vw;
+  }
+
+  .back-to-top img {
+    width: 8.2vw;
+  }
+}
+
+@media screen and (min-width: 715px) {
+  .back-to-top {
+    right: 1.8vw;
+  }
+
+  .back-to-top img {
+    width: 8vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .back-to-top {
+    right: 1.7vw;
+  }
+
+  .back-to-top img {
+    width: 7.5vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .back-to-top {
+    right: 1.7vw;
+  }
+
+  .back-to-top img {
+    width: 7.5vw;
+  }
+}

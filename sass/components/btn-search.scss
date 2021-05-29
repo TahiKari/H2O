@@ -35,3 +35,14 @@
     font-size: 1.9em;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .btn-search {
+    top: 7px;
+    right: 31vw;
+  }
+
+  .fa-search {
+    font-size: 1.5em;
+  }
+}
