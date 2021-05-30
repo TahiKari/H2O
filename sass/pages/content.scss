@@ -308,3 +308,48 @@
     width: 15vw;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .top-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "card-1 card-2 card-3";
+  }
+
+  .card-3 img {
+    width: 40vw;
+  }
+
+  .card img {
+    width: 24vw;
+  }
+
+  .center-container {
+    height: 450px;
+    background-size: 100vw 450px;
+  }
+
+  .art {
+    font-size: 1.3em;
+    padding: 0 25px;
+  }
+
+  .btm {
+    height: 535px;
+    background-size: 100vw 530px;
+  }
+
+  .pub img {
+    width: 15vw;
+  }
+
+  .pub-top a:nth-child(2) {
+    top: 50px;
+    left: -7vw;
+  }
+
+  .pub-top a:nth-child(2) img {
+    width: 13vw;
+  }
+}
