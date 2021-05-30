@@ -25,14 +25,27 @@
   }
 }
 
+@media screen and (min-width: 715px) {
+  .btn-search {
+    top: 16px;
+    right: 20vw;
+    font-size: 1.2em;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .btn-search {
     top: 15px;
     right: 20vw;
+    font-size: 1.3em
   }
+}
 
-  .fa-search {
-    font-size: 1.9em;
+@media screen and (min-width: 900px) {
+  .btn-search {
+    top: 8px;
+    left: 50vw;
+    font-size: 1em;
   }
 }
 

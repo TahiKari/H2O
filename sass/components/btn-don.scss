@@ -33,28 +33,43 @@
 
 @media screen and (min-width: 600px) {
   .btn-don {
-    margin-right: 7px;
     top: 10.5px;
     height: 60px;
     border-radius: 30px;
-    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 715px) {
+  .btn-don {
+    top: 2px;
+    margin-right: 40px;
+    width: 26vw;
+    height: 60px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .btn-don {
-    top: 5px;
+    top: 4.5px;
     margin-right: 40px;
-    width: 26vw;
-    height: 80px;
-    border-radius: 40px;
-    font-size: 1.5em;
+    width: 22vw;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .btn-don {
+    width: 18vw;
+    height: 40px;
+    top: 5px;
+    left: -1vw;
+    font-size: 1.2em;
+    margin-right: 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .btn-don {
-    width: 18vw;
     height: 40px;
     right: -2vw;
   }
