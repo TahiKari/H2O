@@ -121,7 +121,7 @@
   width: 30vw;
 }
 
-@media screen and (min-width: 375px) {
+@media all and (min-width: 375px) {
   .center-container {
     height: 452px;
     background-size: 100vw 452px;
@@ -147,7 +147,7 @@
   }
 }
 
-@media screen and (min-width: 425px) {
+@media all and (min-width: 425px) {
   .center-container {
     height: 425px;
     background-size: 100vw 425px;
@@ -177,7 +177,7 @@
   }
 }
 
-@media screen and (min-width: 600px) {
+@media all and (min-width: 600px) {
   .center-container {
     height: 450px;
     background-size: 100vw 450px;
@@ -212,7 +212,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
   /* Main */
   .top{
     display: grid;
@@ -274,7 +274,7 @@
   }
 }
 
-@media screen and (min-width: 900px) {
+@media all and (min-width: 900px) {
   .top-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -309,12 +309,16 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media all and (min-width: 1024px) {
   .top-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas: 
     "card-1 card-2 card-3";
+  }
+
+  .card {
+    font-size: 1.2em;
   }
 
   .card-3 img {

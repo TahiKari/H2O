@@ -13,19 +13,19 @@
   color: $color1;
 }
 
-@media screen and (min-width: 375px) {
+@media all and (min-width: 375px) {
   .btn-search {
     right: 2vw;
   }
 }
 
-@media screen and (min-width: 425px) {
+@media all and (min-width: 425px) {
   .btn-search {
     right: 1vw;
   }
 }
 
-@media screen and (min-width: 715px) {
+@media all and (min-width: 715px) {
   .btn-search {
     top: 16px;
     right: 20vw;
@@ -33,7 +33,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
   .btn-search {
     top: 15px;
     right: 20vw;
@@ -41,7 +41,7 @@
   }
 }
 
-@media screen and (min-width: 900px) {
+@media all and (min-width: 900px) {
   .btn-search {
     top: 8px;
     left: 50vw;
@@ -49,7 +49,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media all and (min-width: 1024px) {
   .btn-search {
     top: 7px;
     right: 31vw;

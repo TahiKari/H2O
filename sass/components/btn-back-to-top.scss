@@ -4,19 +4,19 @@
   bottom: 10px;
 }
 
-@media screen and (min-width: 375px) {
+@media all and (min-width: 375px) {
   .back-to-top {
     right: 4vw;
   }
 }
 
-@media screen and (min-width: 425px) {
+@media all and (min-width: 425px) {
   .back-to-top {
     right: 3vw;
   }
 }
 
-@media screen and (min-width: 505px) {
+@media all and (min-width: 505px) {
   .back-to-top {
     right: 2.5vw;
   }
@@ -26,7 +26,7 @@
   }
 }
 
-@media screen and (min-width: 600px) {
+@media all and (min-width: 600px) {
   .back-to-top {
     right: 2vw;
   }
@@ -36,7 +36,7 @@
   }
 }
 
-@media screen and (min-width: 715px) {
+@media all and (min-width: 715px) {
   .back-to-top {
     right: 1.8vw;
   }
@@ -46,7 +46,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
   .back-to-top {
     right: 1.7vw;
   }
@@ -56,7 +56,7 @@
   }
 }
 
-@media screen and (min-width: 900px) {
+@media all and (min-width: 900px) {
   .back-to-top {
     right: 1.7vw;
   }

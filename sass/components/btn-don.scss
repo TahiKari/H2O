@@ -16,14 +16,14 @@
   border: 2px solid $color1;
 }
 
-@media screen and (min-width: 375px) {
+@media all and (min-width: 375px) {
   .btn-don {
     margin-right: 7px;
     top: 8px;
   }
 }
 
-@media screen and (min-width: 425px) {
+@media all and (min-width: 425px) {
   .btn-don {
     margin-right: 7px;
     top: 9px;
@@ -31,7 +31,7 @@
   }
 }
 
-@media screen and (min-width: 600px) {
+@media all and (min-width: 600px) {
   .btn-don {
     top: 10.5px;
     height: 60px;
@@ -39,7 +39,7 @@
   }
 }
 
-@media screen and (min-width: 715px) {
+@media all and (min-width: 715px) {
   .btn-don {
     top: 2px;
     margin-right: 40px;
@@ -48,7 +48,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
   .btn-don {
     top: 4.5px;
     margin-right: 40px;
@@ -57,7 +57,7 @@
   }
 }
 
-@media screen and (min-width: 900px) {
+@media all and (min-width: 900px) {
   .btn-don {
     width: 18vw;
     height: 40px;
@@ -68,7 +68,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media all and (min-width: 1024px) {
   .btn-don {
     height: 40px;
     right: -2vw;

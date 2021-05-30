@@ -387,27 +387,27 @@ template {
   border: 2px solid #009fe3;
 }
 
-@media screen and (min-width: 375px) {
+@media all and (min-width: 375px) {
   .btn-don {
     margin-right: 7px;
     top: 8px;
   }
 }
-@media screen and (min-width: 425px) {
+@media all and (min-width: 425px) {
   .btn-don {
     margin-right: 7px;
     top: 9px;
     height: 45px;
   }
 }
-@media screen and (min-width: 600px) {
+@media all and (min-width: 600px) {
   .btn-don {
     top: 10.5px;
     height: 60px;
     border-radius: 30px;
   }
 }
-@media screen and (min-width: 715px) {
+@media all and (min-width: 715px) {
   .btn-don {
     top: 2px;
     margin-right: 40px;
@@ -415,7 +415,7 @@ template {
     height: 60px;
   }
 }
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
   .btn-don {
     top: 4.5px;
     margin-right: 40px;
@@ -423,7 +423,7 @@ template {
     height: 60px;
   }
 }
-@media screen and (min-width: 900px) {
+@media all and (min-width: 900px) {
   .btn-don {
     width: 18vw;
     height: 40px;
@@ -433,7 +433,7 @@ template {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 1024px) {
+@media all and (min-width: 1024px) {
   .btn-don {
     height: 40px;
     right: -2vw;
@@ -454,38 +454,38 @@ template {
   color: #009fe3;
 }
 
-@media screen and (min-width: 375px) {
+@media all and (min-width: 375px) {
   .btn-search {
     right: 2vw;
   }
 }
-@media screen and (min-width: 425px) {
+@media all and (min-width: 425px) {
   .btn-search {
     right: 1vw;
   }
 }
-@media screen and (min-width: 715px) {
+@media all and (min-width: 715px) {
   .btn-search {
     top: 16px;
     right: 20vw;
     font-size: 1.2em;
   }
 }
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
   .btn-search {
     top: 15px;
     right: 20vw;
     font-size: 1.3em;
   }
 }
-@media screen and (min-width: 900px) {
+@media all and (min-width: 900px) {
   .btn-search {
     top: 8px;
     left: 50vw;
     font-size: 1em;
   }
 }
-@media screen and (min-width: 1024px) {
+@media all and (min-width: 1024px) {
   .btn-search {
     top: 7px;
     right: 31vw;
@@ -501,17 +501,17 @@ template {
   bottom: 10px;
 }
 
-@media screen and (min-width: 375px) {
+@media all and (min-width: 375px) {
   .back-to-top {
     right: 4vw;
   }
 }
-@media screen and (min-width: 425px) {
+@media all and (min-width: 425px) {
   .back-to-top {
     right: 3vw;
   }
 }
-@media screen and (min-width: 505px) {
+@media all and (min-width: 505px) {
   .back-to-top {
     right: 2.5vw;
   }
@@ -520,7 +520,7 @@ template {
     width: 9vw;
   }
 }
-@media screen and (min-width: 600px) {
+@media all and (min-width: 600px) {
   .back-to-top {
     right: 2vw;
   }
@@ -529,7 +529,7 @@ template {
     width: 8.2vw;
   }
 }
-@media screen and (min-width: 715px) {
+@media all and (min-width: 715px) {
   .back-to-top {
     right: 1.8vw;
   }
@@ -538,7 +538,7 @@ template {
     width: 8vw;
   }
 }
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
   .back-to-top {
     right: 1.7vw;
   }
@@ -547,7 +547,7 @@ template {
     width: 7.5vw;
   }
 }
-@media screen and (min-width: 900px) {
+@media all and (min-width: 900px) {
   .back-to-top {
     right: 1.7vw;
   }
@@ -687,7 +687,7 @@ h1 {
     transform: translateX(0);
   }
 }
-@media screen and (min-width: 375px) {
+@media all and (min-width: 375px) {
   /* Header */
   .logo {
     left: 22.5vw;
@@ -712,7 +712,7 @@ h1 {
     height: 40px;
   }
 }
-@media screen and (min-width: 425px) {
+@media all and (min-width: 425px) {
   /* Header */
   .header-top {
     margin-bottom: 20px;
@@ -748,12 +748,12 @@ h1 {
     top: 250px;
   }
 }
-@media screen and (min-width: 505px) {
+@media all and (min-width: 505px) {
   .menu {
     margin: 70px 0 0 -3000px;
   }
 }
-@media screen and (min-width: 600px) {
+@media all and (min-width: 600px) {
   .header-top {
     margin-bottom: 40px;
   }
@@ -774,7 +774,7 @@ h1 {
     top: 180px;
   }
 }
-@media screen and (min-width: 715px) {
+@media all and (min-width: 715px) {
   .header-top {
     padding-top: 50px;
     margin-bottom: 120px;
@@ -841,7 +841,7 @@ h1 {
     width: 100vw;
   }
 }
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
   /* header */
   .logo img {
     width: 26vw;
@@ -902,7 +902,7 @@ h1 {
     width: 100vw;
   }
 }
-@media screen and (min-width: 900px) {
+@media all and (min-width: 900px) {
   header {
     margin-bottom: 50px;
   }
@@ -962,7 +962,7 @@ h1 {
     transform: scaleY(1.3);
   }
 }
-@media screen and (min-width: 1024px) {
+@media all and (min-width: 1024px) {
   header {
     margin-bottom: 50px;
   }
@@ -1045,7 +1045,7 @@ footer li {
   align-items: center;
 }
 
-@media screen and (min-width: 600px) {
+@media all and (min-width: 600px) {
   footer {
     padding: 50px 0;
     flex-direction: row;
@@ -1053,7 +1053,12 @@ footer li {
   }
 
   footer p, footer a {
-    font-size: 17px;
+    font-size: 1.1em;
+  }
+}
+@media all and (min-width: 1024px) {
+  footer {
+    font-size: 1.3em;
   }
 }
 /* Main */
@@ -1178,7 +1183,7 @@ footer li {
   width: 30vw;
 }
 
-@media screen and (min-width: 375px) {
+@media all and (min-width: 375px) {
   .center-container {
     height: 452px;
     background-size: 100vw 452px;
@@ -1203,7 +1208,7 @@ footer li {
     margin-top: 15px;
   }
 }
-@media screen and (min-width: 425px) {
+@media all and (min-width: 425px) {
   .center-container {
     height: 425px;
     background-size: 100vw 425px;
@@ -1232,7 +1237,7 @@ footer li {
     top: 40px;
   }
 }
-@media screen and (min-width: 600px) {
+@media all and (min-width: 600px) {
   .center-container {
     height: 450px;
     background-size: 100vw 450px;
@@ -1266,7 +1271,7 @@ footer li {
     width: 21vw;
   }
 }
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
   /* Main */
   .top {
     display: grid;
@@ -1323,7 +1328,7 @@ footer li {
     background-size: 100vw 510px;
   }
 }
-@media screen and (min-width: 900px) {
+@media all and (min-width: 900px) {
   .top-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -1356,11 +1361,15 @@ footer li {
     width: 15vw;
   }
 }
-@media screen and (min-width: 1024px) {
+@media all and (min-width: 1024px) {
   .top-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas: "card-1 card-2 card-3";
+  }
+
+  .card {
+    font-size: 1.2em;
   }
 
   .card-3 img {

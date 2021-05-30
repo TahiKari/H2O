@@ -28,13 +28,19 @@ footer li {
   @include flex-col-center;
 }
 
-@media screen and (min-width: 600px) {
+@media all and (min-width: 600px) {
   footer {
     padding: 50px 0;
     flex-direction: row;
     justify-content: space-around;
   }
   footer p, footer a {
-    font-size: 17px;
+    font-size: 1.1em;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  footer {
+    font-size: 1.3em;
   }
 }
