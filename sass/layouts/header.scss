@@ -1,7 +1,6 @@
 /* Header */
 header {
   background: $color2;
-  width: 100vw;
 }
 
 .header-top {
@@ -102,8 +101,8 @@ h1 {
 }
 
 .caroussel {
-  width: 100vw;
   overflow: auto;
+  width: 100vw;
 }
 
 .images img {
@@ -111,7 +110,6 @@ h1 {
 }
 
 .images {
-  width: 100vw;
   display: flex;
   animation-duration: 15s;
   animation-name: mesImages;
@@ -274,19 +272,6 @@ h1 {
     top: 270px;
     font-size: 2.5em;
   }
-
-  .caroussel {
-    width: 100vw;
-    overflow: auto;
-  }
-  
-  .images img {
-    width: 100vw;
-  }
-  
-  .images {
-    width: 100vw;
-  }
 }
 
 @media all and (min-width: 768px) {
@@ -335,19 +320,6 @@ h1 {
   h1 {
     top: 270px;
     font-size: 2.5em;
-  }
-
-  .caroussel {
-    width: 100vw;
-    overflow: auto;
-  }
-  
-  .images img {
-    width: 100vw;
-  }
-  
-  .images {
-    width: 100vw;
   }
 }
 
@@ -398,7 +370,6 @@ h1 {
 
   .menu {
     margin: 0;
-    width: 100vw;
   }
 
   .menu a {

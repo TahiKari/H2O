@@ -177,6 +177,13 @@
   }
 }
 
+@media all and (min-width: 505px) {
+  .btm {
+    height: 450px;
+    background-size: 100vw 450px;
+  }
+}
+
 @media all and (min-width: 600px) {
   .center-container {
     height: 450px;
