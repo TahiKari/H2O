@@ -1,4 +1,7 @@
-/* Main */
+main {
+  grid-area: main;
+}
+/* Main
 .top {
   margin-bottom: 40px;
 }
@@ -54,8 +57,9 @@
 }
 
 .art {
-  width: 45vw;
-  padding: 5px;
+  display: flex;
+  width: 35vw;
+  padding: 15px;
 }
 
 .btm {
@@ -220,7 +224,6 @@
 }
 
 @media all and (min-width: 768px) {
-  /* Main */
   .top{
     display: grid;
     grid-template-columns: 1fr;
@@ -363,4 +366,4 @@
   .pub-top a:nth-child(2) img {
     width: 13vw;
   }
-}
+}*/

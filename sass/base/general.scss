@@ -7,14 +7,7 @@ ul{
   list-style: none;
 }
 
-a {
-  text-decoration: none;
+a, a:hover {
   color: $color1;
-  &:hover {
-    color: $color1;
-  }
-}
-
-p, h1, h2, h3, .btm span {
-  text-align: center;
+  text-decoration: none;
 }
