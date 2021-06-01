@@ -49,6 +49,7 @@ h2 {
 }
 
 .card {
+  position: relative;
   background-color: transparent;
   width: 90%;
   height: 250px;
@@ -59,7 +60,7 @@ h2 {
 }
 
 .card-inner {
-  position: relative;
+  width: 100%;
   text-align: center;
   transition: transform 0.5s;
   transform-style: preserve-3d;
@@ -68,16 +69,21 @@ h2 {
 .card:hover .card-inner {
   transform: rotateY(180deg);
 }
-.card-front,
-.card-back {
-  position: absolute;
+.card-front, .card-back {
   width: 100%;
-  height: 100%;
   backface-visibility: hidden;
+}
+
+.card-front {
+  position: absolute;
+
 }
 
 .card-back {
   transform: rotateY(180deg);
+  position: absolute;
+  top: 25px;
+  font-size: 1.2em;
 }
 
 .card img {
