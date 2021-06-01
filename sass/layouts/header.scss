@@ -1,13 +1,3 @@
-body {
-  display: grid;
-  grid-template-columns: 100vw;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-}
-
 header {
   background: $color2;
   grid-area: header;
@@ -66,10 +56,11 @@ header {
   transition-duration: 1s;
   background: $color2;
   position: absolute;
-  top: 8.3em;
+  top: 9em;
   left: 0;
   width: 100vw;
   z-index: 1;
+  padding-bottom: 10px;
 }
 
 .menu a {
@@ -97,12 +88,12 @@ header {
   border: none;
   background: lighten($color2, 10);
   padding: 3px 20px 1px;
-  font-size: 1.3em;
+  font-size: 1.2em;
   width: 100%;
 }
 
 .search input::placeholder {
-  color: $color1;
+  color: rgba($color1, 0.5)
 }
 
 /* Caroussel */
@@ -145,12 +136,16 @@ header {
   }
 
   .menu {
-    top: 9.1em;
+    top: 9.3em;
   }
 
   .menu a {
     width: 34%;
     padding: 1.7px;
+  }
+
+  .search input {
+    font-size: 1.4em;
   }
 }
 
@@ -160,18 +155,42 @@ header {
   }
 
   .menu {
-    top: 9.4em;
+    top: 9.6em;
   }
 
   .menu a {
     width: 30%;
     padding: 3.5px;
   }
+
+  .search input {
+    font-size: 1.6em;
+  }
 }
 
 @media all and (min-width: 768px) {
+  .logo img {
+    width: 160px;
+  }
+
+  .menu {
+    top: 12.7em;
+  }
+
   .menu a {
-    width: 17%;
+    width: 25%;
+    font-size: 1.5em;
+    padding: 11px;
+  }
+
+  .search form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .search input {
+    width: 50%;
+    font-size: 2em;
   }
 }
 

@@ -36,6 +36,12 @@
     font-size: 1.1em;
   }
 }
+
+@media all and (min-width: 768px) {
+  .btn-don {
+    font-size: 1.5em;
+  }
+}
 /*.btn-don {
   order: 3;
   width: 36vw;

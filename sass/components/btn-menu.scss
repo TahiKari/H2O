@@ -1,19 +1,11 @@
-.btn-menu img {
-  width: 25px;
-}
 .btn-menu {
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border: 3px solid $color1;
-  margin-top: 2px;
-  width: 35px;
-  height: 35px;
-}
-
-.btn-menu:hover {
-  background: lighten($color2, 5);
+  width: 10vw;
+  height: 30px;
+  margin-top: 7.5px;
 }
 
 .btn-menu:active {
@@ -21,13 +13,19 @@
 }
 
 @media all and (min-width: 375px) {
-  .btn-menu img {
-    width: 30px;
-  }
-
   .btn-menu {
-    margin-top: 2px;
-    width: 40px;
-    height: 40px;
+    margin-top: 9px;
+  }
+}
+
+@media all and (min-width: 425px) {
+  .btn-menu {
+    margin-top: 10px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .btn-menu {
+    margin-top: 22px;
   }
 }

@@ -1,6 +1,13 @@
 body {
   font-size: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
 
 ul{
@@ -8,6 +15,12 @@ ul{
 }
 
 a, a:hover {
-  color: $color1;
   text-decoration: none;
 }
+
+h1, h2, h3, p, a, a:hover {
+  color: $color1;
+  text-align: center;
+}
+
+
