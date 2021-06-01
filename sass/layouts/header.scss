@@ -12,12 +12,12 @@ header {
 .header-top {
   grid-area: header-top;
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
   grid-template-areas:
     "main-navigation logo don"
     "search search search";
-  gap: 1vw;
+  gap: 13px;
   position: relative;
   padding: 20px 20px 10px;
 }
@@ -58,7 +58,7 @@ header {
   position: absolute;
   top: 9em;
   left: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 1;
   padding-bottom: 10px;
 }
@@ -99,13 +99,13 @@ header {
 /* Caroussel */
 .caroussel {
   grid-area: caroussel;
-  overflow: auto;
-  width: 100vw;
+  overflow: hidden;
+  width: 100%;
   margin-top: 20px;
 }
 
 .images img {
-  width: 100vw;
+  width: 100%;
 }
 
 .images {
@@ -122,7 +122,7 @@ header {
   }
   30%,
   75% {
-    transform: translateX(-100vw);
+    transform: translateX(-100%);
   }
   80%,
   100% {
