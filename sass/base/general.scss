@@ -18,9 +18,13 @@ a, a:hover {
   text-decoration: none;
 }
 
+h1, h2, h3 {
+  text-align: center;
+  margin: 0 auto;
+}
+
 h1, h2, h3, p, a, a:hover {
   color: $color1;
-  text-align: center;
 }
 
 
