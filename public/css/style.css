@@ -1029,10 +1029,15 @@ footer li {
 }
 
 .card-back {
+  display: flex;
+  align-items: center;
   transform: rotateY(180deg);
   position: absolute;
-  top: 15px;
-  font-size: 1em;
+  top: 0;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .card img {
