@@ -1,3 +1,6 @@
+h1 {
+  width: 85%;
+}
 .top {
   margin-bottom: 40px;
 }
@@ -5,18 +8,45 @@
 .top h2 {
   margin: 30px auto 20px;
   color: $color1;
-  width: 90vw;
+  width: 45%;
+}
+
+.top-container {
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+  "card-1"
+  "card-2"
+  "card-3";
+  gap: 7px;
+}
+
+.card-1 {
+  grid-area: card-1;
+}
+
+.card-2 {
+  grid-area: card-2;
+}
+
+.card-3 {
+  grid-area: card-3;
 }
 
 .card {
   background-color: transparent;
-  margin: 10px 20px;
-  padding: 30px;
+  padding: 20px;
   box-shadow: 1px 1px 15px 1px #c1c7c9;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: $color1;
+}
+
+.card h3 {
+  width: 100%;
 }
 
 .card-inner {
@@ -30,25 +60,68 @@
   transform: rotateY(180deg);
 }
 
-.card-front, .card-back {
+.card-front,
+.card-back {
   width: 100%;
   backface-visibility: hidden;
 }
 
+.card:hover .card-front img, 
+.card:hover .card-front h3 {
+  display: none;
+}
+
+.card-front img {
+  width: 90%;
+}
+
 .card-back {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   transform: rotateY(180deg);
   position: absolute;
-  top: 0;
-  font-size: 1.2em;
-  display: flex;
-  align-items: center;
+  top: -10px;
+  font-size: 1.1em;
   height: 100%;
 }
 
-.card img {
-  width: 90%;
+@media all and (min-width: 768px) {
+  .top-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "card-1 card-1 card-2 card-2"
+      "card-3 card-3 card-3 card-3";
+      gap: 10px;
+  }
+
+  .card-1 {
+    grid-area: card-1;
+  }
+  
+  .card-2 {
+    grid-area: card-2;
+  }
+  
+  .card-3 {
+    grid-area: card-3;
+    width: 90;
+  }
+  
+  .card {
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .card-front,
+  .card-back {
+    width: 100%;
+  }
+  
+  .card-front img {
+    width: 100%;
+  }
 }
 
 /*.center {
