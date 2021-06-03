@@ -197,6 +197,10 @@ body {
   transform: scale(0.9);
 }
 
+.btn-search i {
+  background: red;
+}
+
 @media all and (min-width: 375px) {
   .btn-search {
     right: 4vw;
