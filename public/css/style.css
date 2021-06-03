@@ -189,6 +189,7 @@ body {
   position: relative;
   left: 90%;
   top: 2px;
+  background: red;
   cursor: pointer;
   font-size: 1em;
 }
