@@ -187,8 +187,8 @@ body {
 }*/
 .btn-search {
   position: absolute;
+  top: 20px;
   right: 5vw;
-  top: 3px;
   cursor: pointer;
   font-size: 1em;
 }
