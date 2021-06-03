@@ -211,6 +211,7 @@ body {
 }
 @media all and (min-width: 768px) {
   .btn-search {
+    top: 20px;
     right: 26vw;
     font-size: 1.6em;
   }
