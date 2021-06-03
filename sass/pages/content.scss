@@ -98,6 +98,10 @@ h1 {
   border-radius: 5px;
 }
 
+.card-back p {
+  width: 90%;
+}
+
 @media all and (min-width: 768px) {
   .top-container {
     display: grid;
