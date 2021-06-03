@@ -196,7 +196,7 @@ body {
 
 .fa-search {
   position: absolute;
-  top: 6px;
+  top: 5px;
   left: 90.5%;
 }
 
@@ -211,7 +211,8 @@ body {
   }
 
   .fa-search {
-    top: 7px;
+    top: 6px;
+    left: 91%;
   }
 }
 @media all and (min-width: 768px) {
@@ -1003,7 +1004,7 @@ footer li {
 h1 {
   width: 85%;
   margin-top: 20px;
-  background: green;
+  background: yellow;
 }
 
 .top {
