@@ -17,7 +17,6 @@
 
 @media all and (min-width: 375px) {
   .btn-search {
-    right: 4vw;
     font-size: 1.2em;
   }
 }
@@ -25,14 +24,14 @@
 @media all and (min-width: 425px) {
   .btn-search {
     font-size: 1.3em;
-    top: 3px;
+    right: 9%;
   }
 }
 
 @media all and (min-width: 768px) {
   .btn-search {
-    right: 26vw;
     font-size: 1.7em;
+    right: 31%;
   }
 }
 
