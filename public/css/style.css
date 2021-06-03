@@ -186,16 +186,19 @@ body {
   }
 }*/
 .btn-search {
-  position: relative;
-  left: 90%;
-  top: 2px;
-  background: red;
+  position: absolute;
+  right: 10%;
   cursor: pointer;
   font-size: 1em;
 }
 
 .btn-search:active {
   transform: scale(0.9);
+}
+
+.fa-search {
+  position: absolute;
+  top: 6px;
 }
 
 @media all and (min-width: 375px) {
