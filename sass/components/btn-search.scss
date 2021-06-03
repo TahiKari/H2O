@@ -1,8 +1,8 @@
 
 .btn-search {
-  position: absolute;
   cursor: pointer;
   font-size: 1em;
+  
 }
 
 .btn-search:active {
@@ -11,8 +11,8 @@
 
 .fa-search {
   position: absolute;
-  right: 10%;
   top: 6px;
+  left: 90.5%;
 }
 
 @media all and (min-width: 375px) {
@@ -27,17 +27,13 @@
   }
 
   .fa-search {
-    right: 9%;
+    top: 7px;
   }
 }
 
 @media all and (min-width: 768px) {
   .btn-search {
     font-size: 1.7em;
-  }
-
-  .fa-search {
-    right: 31%;
   }
 }
 
