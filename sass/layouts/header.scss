@@ -105,10 +105,11 @@ header {
 }
 
 .images img {
-  width: 100%;
+  width: 100vw;
 }
 
 .images {
+  width: 100vw;
   display: flex;
   animation-duration: 15s;
   animation-name: mesImages;
