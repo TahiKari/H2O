@@ -216,7 +216,12 @@ body {
 }
 @media all and (min-width: 768px) {
   .btn-search {
-    font-size: 1.7em;
+    font-size: 1.6em;
+  }
+
+  .fa-search {
+    top: 8px;
+    left: 69.5%;
   }
 }
 /*@media all and (min-width: 715px) {
@@ -412,7 +417,7 @@ header {
   border-radius: 20px;
   border: none;
   background: #455d69;
-  padding: 2px 15px 1px;
+  padding: 1px 15px 0;
   font-size: 1.2em;
   width: 100%;
 }
@@ -511,6 +516,7 @@ header {
   .search input {
     width: 50%;
     font-size: 2em;
+    padding: 2px 20px 0;
   }
 }
 /*header {
