@@ -1002,6 +1002,7 @@ footer li {
 h1 {
   width: 85%;
   margin-top: 20px;
+  background: red;
 }
 
 .top {
