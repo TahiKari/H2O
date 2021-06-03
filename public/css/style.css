@@ -187,8 +187,8 @@ body {
 }*/
 .btn-search {
   position: absolute;
-  right: 5vw;
-  top: 4px;
+  right: 4vw;
+  top: 2px;
   cursor: pointer;
   font-size: 1em;
 }
@@ -206,13 +206,13 @@ body {
 @media all and (min-width: 425px) {
   .btn-search {
     font-size: 1.3em;
+    top: 3px;
   }
 }
 @media all and (min-width: 768px) {
   .btn-search {
-    top: 20px;
     right: 26vw;
-    font-size: 1.6em;
+    font-size: 1.7em;
   }
 }
 /*@media all and (min-width: 715px) {
@@ -408,7 +408,7 @@ header {
   border-radius: 20px;
   border: none;
   background: #455d69;
-  padding: 3px 20px 1px;
+  padding: 2px 15px 1px;
   font-size: 1.2em;
   width: 100%;
 }
