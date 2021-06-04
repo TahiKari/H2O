@@ -15,13 +15,6 @@ h1 {
 
 .top-container {
   padding: 0 10px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: 
-  "card-1"
-  "card-2"
-  "card-3";
 }
 
 .card-1 {
@@ -104,12 +97,13 @@ h1 {
 @media all and (min-width: 768px) {
   .top-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.1fr 0.1fr;
     grid-template-areas:
       "card-1 card-1 card-2 card-2"
       "card-3 card-3 card-3 card-3";
       gap: 10px;
+      padding: 0 20px;
   }
 
   .card-1 {
@@ -122,12 +116,14 @@ h1 {
   
   .card-3 {
     grid-area: card-3;
-    width: 90;
+    width: 70%;
+    position: relative;
+    left: 15%;
   }
   
   .card {
     margin: 0;
-    padding: 20px;
+    height: 100%;
   }
   
   .card-front,
@@ -136,7 +132,7 @@ h1 {
   }
   
   .card-front img {
-    width: 100%;
+    width: 90%;
   }
 }
 

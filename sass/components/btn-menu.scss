@@ -27,3 +27,9 @@
     width: 100%;
   }
 }
+
+@media all and (min-width: 850px) {
+  .btn-menu {
+    display: none;
+  }
+}

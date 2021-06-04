@@ -61,6 +61,11 @@ body {
     width: 100%;
   }
 }
+@media all and (min-width: 850px) {
+  .btn-menu {
+    display: none;
+  }
+}
 .don {
   grid-area: don;
   display: flex;
@@ -101,6 +106,11 @@ body {
 @media all and (min-width: 768px) {
   .btn-don {
     font-size: 1.5em;
+  }
+}
+@media all and (min-width: 850px) {
+  .btn-don {
+    font-size: 2em;
   }
 }
 /*.btn-don {
@@ -202,6 +212,11 @@ body {
 @media all and (min-width: 768px) {
   .btn-search {
     font-size: 1.6em;
+  }
+}
+@media all and (min-width: 850px) {
+  .btn-search {
+    font-size: 2em;
   }
 }
 /*@media all and (min-width: 715px) {
@@ -484,39 +499,46 @@ header {
     padding: 70px;
   }
 
-  .search {
-    width: 60%;
+  .logo {
+    order: 1;
   }
 
-  .menu-checkbox:checked ~ .menu {
-    margin-left: 0;
-    transition-duration: 0.5s;
-    display: block;
-  }
-
-  .menu-checkbox {
-    position: absolute;
-    top: -5000px;
+  .logo img {
+    width: 200px;
   }
 
   .menu {
-    margin-left: 0px;
-    transition-duration: 1s;
-    background: #31424a;
-    position: absolute;
-    top: 8.7em;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    padding-bottom: 10px;
+    top: 8em;
+    left: 8%;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .menu a {
-    display: block;
-    text-align: center;
-    background: #31424a;
-    margin: 5px auto;
-    width: 40%;
+    display: inline;
+    padding: 5px;
+    font-size: 0.95em;
+  }
+
+  .search {
+    position: relative;
+    top: -78px;
+    left: 48.5%;
+    width: 50px;
+    margin: 0 auto;
+  }
+
+  .search form {
+    background: none;
+    width: 20px;
+  }
+
+  .search input {
+    display: none;
+  }
+
+  .don {
+    margin-right: 70px;
   }
 }
 /*header {
@@ -1018,10 +1040,6 @@ h1 {
 
 .top-container {
   padding: 0 10px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "card-1" "card-2" "card-3";
 }
 
 .card-1 {
@@ -1104,10 +1122,11 @@ h1 {
 @media all and (min-width: 768px) {
   .top-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.1fr 0.1fr;
     grid-template-areas: "card-1 card-1 card-2 card-2" "card-3 card-3 card-3 card-3";
     gap: 10px;
+    padding: 0 20px;
   }
 
   .card-1 {
@@ -1120,12 +1139,14 @@ h1 {
 
   .card-3 {
     grid-area: card-3;
-    width: 90;
+    width: 70%;
+    position: relative;
+    left: 15%;
   }
 
   .card {
     margin: 0;
-    padding: 20px;
+    height: 100%;
   }
 
   .card-front,
@@ -1134,7 +1155,7 @@ h1 {
   }
 
   .card-front img {
-    width: 100%;
+    width: 90%;
   }
 }
 /*.center {

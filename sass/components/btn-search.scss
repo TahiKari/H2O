@@ -27,6 +27,12 @@
   }
 }
 
+@media all and (min-width: 850px) {
+  .btn-search {
+    font-size: 2em;
+  }
+}
+
 /*@media all and (min-width: 715px) {
   .btn-search {
     top: 16px;

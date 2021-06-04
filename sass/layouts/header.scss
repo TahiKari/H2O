@@ -177,39 +177,46 @@ header {
     padding: 70px;
   }
 
-  .search {
-    width: 60%;
+  .logo {
+    order: 1;
   }
 
-  .menu-checkbox:checked ~ .menu {
-    margin-left: 0;
-    transition-duration: 0.5s;
-    display: block;
-  }
-  
-  .menu-checkbox {
-    position: absolute;
-    top: -5000px;
+  .logo img {
+    width: 200px;
   }
   
   .menu {
-    margin-left: 0px;
-    transition-duration: 1s;
-    background: $color2;
-    position: absolute;
-    top: 8.7em;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    padding-bottom: 10px;
+    top: 8em;
+    left: 8%;
+    width: 90%;
+    margin: 0 auto;
   }
   
   .menu a {
-    display: block;
-    text-align: center;
-    background: $color2;
-    margin: 5px auto;
-    width: 40%;
+    display: inline;
+    padding: 5px;
+    font-size: 0.95em;
+  }
+
+  .search {
+    position: relative;
+    top: -78px;
+    left: 48.5%;
+    width: 50px;
+    margin: 0 auto;
+  }
+
+  .search form {
+    background: none;
+    width: 20px;
+  }
+
+  .search input {
+    display: none;
+  }
+
+  .don {
+    margin-right: 70px;
   }
 }
 
