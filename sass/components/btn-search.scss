@@ -1,18 +1,12 @@
 
 .btn-search {
   cursor: pointer;
-  font-size: 1em;
-  
+  font-size: 1.1em;
+  margin-right: 10px;
 }
 
 .btn-search:active {
   transform: scale(0.9);
-}
-
-.fa-search {
-  position: absolute;
-  top: 9.5px;
-  left: 90%;
 }
 
 @media all and (min-width: 375px) {
@@ -25,20 +19,11 @@
   .btn-search {
     font-size: 1.3em;
   }
-
-  .fa-search {
-    left: 91%;
-  }
 }
 
 @media all and (min-width: 768px) {
   .btn-search {
     font-size: 1.6em;
-  }
-
-  .fa-search {
-    top: 8px;
-    left: 69.5%;
   }
 }
 

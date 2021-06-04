@@ -13,30 +13,32 @@
 <body>
   <header id="back-to-top">
     <div class="header-top">
-      <a class="logo" href="#">
-        <img src="ressources/images/title-H2O.png" alt="Logo slime Aquatique">
-      </a>
-      <nav class="main-navigation">
-        <input id="menu-checkbox" type="checkbox" class="menu-checkbox">
-        <label for="menu-checkbox" class="btn-menu">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35.001" viewBox="0 0 40 35.001"><defs><style>.a{fill:none;stroke:#009fe4;stroke-linecap:round;stroke-width:5px;}</style></defs><g transform="translate(2.5 2.5)"><line class="a" x2="35"/><line class="a" x2="35" transform="translate(0 15)"/><line class="a" x2="35" transform="translate(0 30.001)"/></g></svg>
-        </label>
-        <div class="menu">
-          <a href="#">NOS ACTIONS</a>
-          <a href="#">L'ONG</a>
-          <a href="#">ÉVÈNEMENTS</a>
-          <a href="#">NOS RÉSULTATS</a>
-          <a href="#">AGIT AVEC NOUS</a>
+      <div class="topbar">
+        <a class="logo" href="#">
+          <img src="ressources/images/title-H2O.png" alt="Logo slime Aquatique">
+        </a>
+        <nav class="main-navigation">
+          <input id="menu-checkbox" type="checkbox" class="menu-checkbox">
+          <label for="menu-checkbox" class="btn-menu">
+            <img src="ressources/images/Btn-Menu@2x.png" alt="Boutons menu">
+          </label>
+          <div class="menu">
+            <a href="#">NOS ACTIONS</a>
+            <a href="#">L'ONG</a>
+            <a href="#">ÉVÈNEMENTS</a>
+            <a href="#">NOS RÉSULTATS</a>
+            <a href="#">AGIT AVEC NOUS</a>
+          </div>
+        </nav>
+        <div class="don">
+          <a class="btn-don" href="#">Faire un don</a>
         </div>
-      </nav>
-      <div class="don">
-        <a class="btn-don" href="#">Faire un don</a>
       </div>
       <div class="search">
         <form role="search" method="POST" action="search.php">
-          <label for="site-search"></label>
           <input type="search" id="site-search" name="site-search" aria-label="Recherche de contenu sur le site" 
           placeholder="Recherche">
+          <label for="site-search"></label>
           <a href="#" class="btn-search"><i class="fas fa-search"></i></a>
         </form>
       </div>

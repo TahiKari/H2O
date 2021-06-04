@@ -1,45 +1,34 @@
 header {
   background: $color2;
-  grid-area: header;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas:
-    "header-top"
-    "caroussel";
 }
 
 .header-top {
-  grid-area: header-top;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(2, auto);
-  grid-template-areas:
-    "main-navigation logo don"
-    "search search search";
-  gap: 13px;
-  position: relative;
-  padding: 20px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 0;
+}
+
+.topbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* logo */
 .logo {
-  grid-area: logo;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  order: 2;
 }
 
 .logo img {
-  width: 100px;
+  width: 95px;
 }
 
 /* Menu */
 .main-navigation {
-  grid-area: main-navigation;
-  display: flex;
-  justify-content: flex-start;
+  order: 1;
 }
+
 .menu-checkbox:checked ~ .menu {
   margin-left: 0;
   transition-duration: 0.5s;
@@ -56,7 +45,7 @@ header {
   transition-duration: 1s;
   background: $color2;
   position: absolute;
-  top: 9em;
+  top: 8.7em;
   left: 0;
   width: 100%;
   z-index: 1;
@@ -75,21 +64,31 @@ header {
   background: lighten($color2, 10);
 }
 
+.don {
+  order: 3;
+}
+
 /* Barre de recherche et bouton recherche */
 .search {
-  grid-area: search;
-  position: relative;
-  margin: 20px 0;
+  margin: 20px auto 0;
+  width: 100%;
+}
+
+.search form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: lighten($color2, 10);
+  border-radius: 25px;
+  padding: 5px 0;
 }
 
 .search input {
-  position: absolute;
-  border-radius: 20px;
   border: none;
   background: lighten($color2, 10);
-  padding: 5px 15px 4px;
   font-size: 1.2em;
-  width: 100%;
+  margin-left: 10px;
+  width: 85%;
 }
 
 .search input::placeholder {
@@ -132,67 +131,85 @@ header {
 }
 
 @media all and (min-width: 375px) {
-  .logo img {
-    width: 105px;
+  .logo  img{
+    width: 100px;
   }
-
   .menu {
-    top: 9.3em;
-  }
-
-  .menu a {
-    width: 34%;
-    padding: 1.7px;
-  }
-
-  .search input {
-    font-size: 1.4em;
+    top: 9em;
   }
 }
 
 @media all and (min-width: 425px) {
-  .logo img {
-    width: 110px;
+  .log img {
+    width: 115px;
   }
 
   .menu {
-    top: 9.5em;
-  }
-
-  .menu a {
-    width: 30%;
-    padding: 3.5px;
-  }
-
-  .search input {
-    font-size: 1.6em;
+    top: 9.1em;
   }
 }
 
 @media all and (min-width: 768px) {
   .logo img {
-    width: 160px;
+    width: 125px;
   }
 
   .menu {
-    top: 11em;
+    top: 7.6em;
+    font-size: 1.4em;
   }
 
-  .menu a {
-    width: 25%;
-    font-size: 1.5em;
-    padding: 11px;
+  .search {
+    width: 60%;
   }
 
   .search form {
-    display: flex;
-    justify-content: center;
+    padding: 8px 5px;
   }
 
   .search input {
-    width: 50%;
-    font-size: 2em;
-    padding: 2px 20px 0;
+    font-size: 1.8em;
+  }
+}
+
+@media all and (min-width: 850px) {
+  .header-top {
+    padding: 70px;
+  }
+
+  .search {
+    width: 60%;
+  }
+
+  .menu-checkbox:checked ~ .menu {
+    margin-left: 0;
+    transition-duration: 0.5s;
+    display: block;
+  }
+  
+  .menu-checkbox {
+    position: absolute;
+    top: -5000px;
+  }
+  
+  .menu {
+    margin-left: 0px;
+    transition-duration: 1s;
+    background: $color2;
+    position: absolute;
+    top: 8.7em;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    padding-bottom: 10px;
+  }
+  
+  .menu a {
+    display: block;
+    text-align: center;
+    background: $color2;
+    margin: 5px auto;
+    width: 40%;
   }
 }
 
