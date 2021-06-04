@@ -43,78 +43,28 @@
   }
 }
 
-@media all and (min-width: 850px) {
-  .btn-don {
-    font-size: 2em;
+@media all and (min-width: 950px) {
+  .don {
+    margin-right: 65px;
   }
-}
-/*.btn-don {
-  order: 3;
-  width: 36vw;
-  height: 40px;
-  position: relative;
-  top: 3px;
-  border: 1px solid $color1;
-  background: $color2;
-  color: $color1;
-  border-radius: 25px;
-  margin-right: 1px;
-}
 
-.btn-don:active {
-  font-weight: bold;
-  border: 2px solid $color1;
-}
-
-@media all and (min-width: 375px) {
   .btn-don {
-    margin-right: 7px;
-    top: 8px;
+    font-size: 1em;
   }
 }
 
-@media all and (min-width: 425px) {
+@media all and (min-width: 1024px) {
   .btn-don {
-    margin-right: 7px;
-    top: 9px;
-    height: 45px;
+    font-size: 1.3em;
   }
 }
 
-@media all and (min-width: 600px) {
-  .btn-don {
-    top: 10.5px;
-    height: 60px;
-    border-radius: 30px;
-  }
-}
-
-@media all and (min-width: 715px) {
-  .btn-don {
-    top: 2px;
-    margin-right: 40px;
-    width: 26vw;
-    height: 60px;
-  }
-}
-
-@media all and (min-width: 768px) {
+/*@media all and (min-width: 768px) {
   .btn-don {
     top: 4.5px;
     margin-right: 40px;
     width: 22vw;
     height: 60px;
-  }
-}
-
-@media all and (min-width: 900px) {
-  .btn-don {
-    width: 18vw;
-    height: 40px;
-    top: 5px;
-    left: -1vw;
-    font-size: 1.2em;
-    margin-right: 0;
   }
 }
 
