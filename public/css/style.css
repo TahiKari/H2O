@@ -672,7 +672,7 @@ h1 {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "art-1 art-2" "art-3 art-4";
-  font-size: 0.8em;
+  font-size: 0.76em;
 }
 
 .art-1 {
@@ -693,6 +693,10 @@ h1 {
 
 .art {
   padding: 15px;
+}
+
+.art h3 {
+  margin-top: 5px;
 }
 
 .art-3, .art-4 {
