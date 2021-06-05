@@ -1,23 +1,38 @@
 body {
   font-size: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: $color3;
+}
+
+.container-principal {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 ul{
   list-style: none;
 }
 
-a, a:hover {
+a {
   text-decoration: none;
 }
 
-h1, h2, h3 {
+a:hover {
+  border-bottom: 2px solid $color1;
+}
+
+h1, h2, h3, p {
   text-align: center;
   margin: 0 auto;
 }
 
 h1, h2, h3, p, a, a:hover {
   color: $color1;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 
