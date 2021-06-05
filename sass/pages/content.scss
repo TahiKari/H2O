@@ -90,7 +90,7 @@ h1 {
 .center-container {
   height: 430px;
   background: url("../../ressources/images/Main-livre.svg") no-repeat;
-  background-size: 100% 430px;
+  background-size: cover;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
