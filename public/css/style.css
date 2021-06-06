@@ -667,6 +667,7 @@ h1 {
 
 .center h2 {
   margin-bottom: 20px;
+  font-size: 1.3em;
 }
 
 .center::before {
