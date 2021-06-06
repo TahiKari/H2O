@@ -5,7 +5,8 @@ main {
 }
 
 h1 {
-  width: 85%;background: rgb(196, 209, 253);
+  width: 81%;
+  background: rgb(196, 209, 253);
 }
 .top {
   margin-bottom: 40px;
@@ -87,11 +88,9 @@ h1 {
   width: 90%;
 }
 
+/* main centre */
 .center {
-  width: 100%;
-  height: auto;
-  padding-bottom: 20px;
-  background: $color4;
+  padding: 20px 0 50px;
 }
 
 .center h2 {
@@ -109,26 +108,43 @@ h1 {
 }
 
 .center-container {
-  height: auto;
   background: url("../../ressources/images/Main-livre.svg") no-repeat;
   background-size: 100% auto;
+  padding: 20px 0;
   display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  flex-direction: column;
+  font-size: 0.75em;
+}
+
+.content-top, .content-btm {
+  width: 100%;
+  display: flex;
   justify-content: space-between;
-  font-size: 0.7em;
-  padding: 20px;
-  margin-bottom: 20px;
+}
+
+.art-1 {
+  padding: 0 10px 10px 20px;
+}
+
+.art-2 {
+  padding: 0 20px 10px 10px;
+}
+
+.art-3 {
+  padding: 0 10px 10px 20px;
+}
+
+.art-4 {
+  padding: 0 20px 10px 10px;
 }
 
 .art {
-  width: 42%;
-  height: 210px;
+  width: 100%;
 }
 
-.art h3 {
-  margin-bottom: 10px;
-}
+
+
+
 
 /*.center-container {
   height: 470px;
