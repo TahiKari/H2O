@@ -87,17 +87,30 @@ h1 {
   width: 90%;
 }
 
+.center h2 {
+  margin-bottom: 20px;
+}
+
+.center::before {
+  content: '';
+  height: 2px;
+  width: 90%;
+  background: $color1;
+  display: block;
+  margin: 20px auto;
+}
+
 .center-container {
-  height: 430px;
+  height: 600px;
   background: url("../../ressources/images/Main-livre.svg") no-repeat;
-  background-size: cover;
+  background-size: contain;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: 
   "art-1 art-2"
   "art-3 art-4";
-  font-size: 0.76em;
+  font-size: 0.95em;
 }
 
 .art-1 {
@@ -117,12 +130,12 @@ h1 {
 }
 
 .art {
-  padding: 15px;
+  padding: 15px 15px 0;
 }
 
 
 .art h3 {
-  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .art-3, .art-4 {
