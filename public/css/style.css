@@ -685,11 +685,12 @@ h1 {
 }
 
 .center-container {
-  background: url("../../ressources/images/Main-livre.svg") no-repeat;
-  background-size: 100% auto;
+  height: 350px;
+  background: #eaeced;
   padding: 20px 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-size: 0.75em;
 }
 
