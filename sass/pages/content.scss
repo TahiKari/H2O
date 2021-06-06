@@ -87,10 +87,6 @@ h1 {
   width: 90%;
 }
 
-.center {
-  padding: 0 20px;
-}
-
 .center h2 {
   margin-bottom: 20px;
 }
@@ -102,6 +98,40 @@ h1 {
   background: $color1;
   display: block;
   margin: 20px auto;
+}
+
+.center-container {
+  height: 470px;
+  background: url("../../ressources/images/Main-livre.svg") no-repeat;
+  background-size: 100% auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+  "art-1 art-2"
+  "art-3 art-4";
+  font-size: 0.7em;
+}
+
+.art-1 {
+  grid-area: art-1;
+}
+
+.art-2 {
+  grid-area: art-2;
+}
+
+.art-3 {
+  grid-area: art-3;
+}
+
+.art-4 {
+  grid-area: art-4;
+}
+
+.art {
+  padding: 15px 15px 0;
 }
 
 /*.center-container {
