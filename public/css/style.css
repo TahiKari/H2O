@@ -668,6 +668,7 @@ h1 {
 /* main centre */
 .center {
   padding: 20px 0 50px;
+  height: auto;
 }
 
 .center h2 {
@@ -685,8 +686,9 @@ h1 {
 }
 
 .center-container {
-  height: 350px;
-  background: #eaeced;
+  height: auto;
+  background: url("../../ressources/images/main-livre-862x1166.png") no-repeat;
+  background-size: 100% 100%;
   padding: 20px 0;
   display: flex;
   flex-direction: column;
