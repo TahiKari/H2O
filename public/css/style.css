@@ -536,6 +536,7 @@ footer {
   align-items: center;
   color: #009fe3;
   margin: 0;
+  padding-top: 20px;
 }
 
 footer p {
@@ -582,11 +583,19 @@ main {
 
 h1 {
   width: 81%;
-  background: #c4d1fd;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
 }
 
 .top {
   margin-bottom: 40px;
+  padding: 0 10px;
 }
 
 .top h2 {
@@ -673,7 +682,6 @@ h1 {
 
 .center h2 {
   margin-bottom: 20px;
-  font-size: 1.3em;
 }
 
 .center::before {
@@ -693,7 +701,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 0.75em;
+  font-size: 0.8em;
 }
 
 .content-top, .content-btm {
@@ -722,54 +730,20 @@ h1 {
   width: 100%;
 }
 
-/*.center-container {
-  height: 470px;
-  background: url("../../ressources/images/Main-livre.svg") no-repeat;
-  background-size: 100% auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: 
-  "art-1 art-2"
-  "art-3 art-4";
-  font-size: 0.7em;
-  position: relative;
-}
-
-.art-1 {
-  grid-area: art-1;
-}
-
-.art-2 {
-  grid-area: art-2;
-}
-
-.art-3 {
-  grid-area: art-3;
-}
-
-.art-4 {
-  grid-area: art-4;
-}
-
-.art {
-  padding: 15px 15px 0;
-}
-
-
 .art h3 {
   margin-bottom: 10px;
 }
 
-.art-3, .art-4 {
-  padding-top: 0;
-}
-
-@media all and (min-width: 320px) {
+@media all and (min-width: 375px) {
   .center-container {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
-}*/
+}
+@media all and (min-width: 425px) {
+  .center-container {
+    font-size: 1em;
+  }
+}
 @media all and (min-width: 768px) {
   .top-container {
     display: grid;
@@ -808,11 +782,19 @@ h1 {
   .card-front img {
     width: 90%;
   }
+
+  .center-container {
+    font-size: 1.1em;
+  }
 }
 @media all and (min-width: 950px) {
   main {
     max-width: 1440px;
-    padding: 40px 20px;
+    padding: 40px 0;
+  }
+
+  h1 {
+    font-size: 3em;
   }
 
   .top-container {
@@ -835,6 +817,26 @@ h1 {
     grid-area: card-3;
     width: 100%;
     left: 0;
+  }
+
+  .center {
+    width: 100%;
+  }
+
+  .center h2 {
+    font-size: 2.2em;
+  }
+
+  .center-container {
+    font-size: 1.3em;
+  }
+
+  .art-1, .art-3 {
+    padding: 0 20px 10px 30px;
+  }
+
+  .art-2, .art-4 {
+    padding: 0 20px 10px 10px;
   }
 }
 /*.center {
