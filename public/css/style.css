@@ -594,7 +594,7 @@ h3 {
 }
 
 .top {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding: 0 10px;
 }
 
@@ -676,7 +676,7 @@ h3 {
 
 /* main centre */
 .center {
-  padding: 20px 0 50px;
+  padding: 20px 0 30px;
   height: auto;
 }
 
@@ -691,6 +691,15 @@ h3 {
   background: #009fe3;
   display: block;
   margin: 20px auto;
+}
+
+.center::after {
+  content: "";
+  width: 90%;
+  height: 2px;
+  background: #009fe3;
+  display: block;
+  margin: 30px auto 0;
 }
 
 .center-container {
@@ -710,19 +719,11 @@ h3 {
   justify-content: space-between;
 }
 
-.art-1 {
+.art-1, .art-3 {
   padding: 0 10px 10px 20px;
 }
 
-.art-2 {
-  padding: 0 20px 10px 10px;
-}
-
-.art-3 {
-  padding: 0 10px 10px 20px;
-}
-
-.art-4 {
+.art-2, .art-4 {
   padding: 0 20px 10px 10px;
 }
 
@@ -732,6 +733,68 @@ h3 {
 
 .art h3 {
   margin-bottom: 10px;
+}
+
+.btm {
+  height: auto;
+  background: no-repeat url("../../ressources/images/bg-rectangle-blue-320x750.png");
+  background-size: 100% 100%;
+  padding: 0 20px;
+}
+
+.btm h2 {
+  margin: 0;
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+.btm span {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  top: 40px;
+  left: -35px;
+  font-weight: bold;
+  font-size: 1.5em;
+  opacity: 0.5;
+}
+
+.pub {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pub img {
+  width: 25vw;
+}
+
+.pub-top {
+  width: 80vw;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pub-btm {
+  width: 80vw;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pub-top a:nth-child(2) {
+  position: relative;
+  top: 35px;
+}
+
+.pub-btm a:nth-child(2) img {
+  width: 30vw;
 }
 
 @media all and (min-width: 375px) {
@@ -786,6 +849,14 @@ h3 {
   .center-container {
     font-size: 1.1em;
   }
+
+  .art-1, .art-3 {
+    padding: 0 30px 10px 50px;
+  }
+
+  .art-2, .art-4 {
+    padding: 0 50px 10px 30px;
+  }
 }
 @media all and (min-width: 950px) {
   main {
@@ -795,6 +866,14 @@ h3 {
 
   h1 {
     font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 1.4em;
   }
 
   .top-container {
@@ -832,44 +911,48 @@ h3 {
   }
 
   .art-1, .art-3 {
-    padding: 0 20px 10px 30px;
+    padding: 0 80px 10px 100px;
   }
 
   .art-2, .art-4 {
-    padding: 0 20px 10px 10px;
+    padding: 0 100px 10px 80px;
   }
 }
-/*.center {
-  margin-top: 20px;
-}
+@media all and (min-width: 1240px) {
+  .art-1, .art-3 {
+    padding: 0 110px 10px 130px;
+  }
 
-.center img {
-  display: none;
+  .art-2, .art-4 {
+    padding: 0 130px 10px 110px;
+  }
 }
+@media all and (min-width: 1240px) {
+  h1 {
+    font-size: 3.5em;
+  }
 
-.center h2 {
-  color: $color1;
-  text-align: center;
-  margin-bottom: 10px;
+  .card-back {
+    font-size: 1.5em;
+  }
+
+  .center h2 {
+    font-size: 2.5em;
+  }
+
+  .center-container {
+    font-size: 1.5em;
+  }
+
+  .art-1, .art-3 {
+    padding: 0 150px 10px 170px;
+  }
+
+  .art-2, .art-4 {
+    padding: 0 170px 10px 150px;
+  }
 }
-
-.center-container {
-  height: 460px;
-  background: url("../../ressources/images/Main-livre@2x.png") no-repeat;
-  background-size: 100vw 460px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-size: 0.8em;
-}
-
-.art {
-  display: flex;
-  width: 35vw;
-  padding: 15px;
-}
-
-.btm {
+/*.btm {
   height: auto;
   background: no-repeat
     url("../../ressources/images/bg-rectangle-blue-320x750.png");
