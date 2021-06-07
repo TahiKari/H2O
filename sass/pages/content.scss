@@ -327,6 +327,14 @@ h3 {
   .art-2, .art-4 {
     padding: 0 50px 10px 30px;
   }
+
+  .btm h2, .btm span {
+    font-size: 1.8em;
+  }
+
+  .btm h2 {
+    margin-bottom: 30px;
+  }
 }
 
 @media all and (min-width: 950px) {

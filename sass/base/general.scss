@@ -7,6 +7,8 @@ body {
 .container-principal {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0;
+  box-shadow: 1px 1px 10px 1px $color5;
 }
 
 ul{
@@ -35,7 +37,7 @@ ul {
   padding: 0;
 }
 
-.logo:hover, .search a:hover .back-to-top a:hover {
+.logo:hover, .search a:hover .back-to-top a:hover, .pub-logo:hover {
   border: none;
 }
 

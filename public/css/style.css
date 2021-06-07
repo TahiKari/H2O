@@ -7,6 +7,8 @@ body {
 .container-principal {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0;
+  box-shadow: 1px 1px 10px 1px #47494A;
 }
 
 ul {
@@ -35,7 +37,7 @@ ul {
   padding: 0;
 }
 
-.logo:hover, .search a:hover .back-to-top a:hover {
+.logo:hover, .search a:hover .back-to-top a:hover, .pub-logo:hover {
   border: none;
 }
 
@@ -883,6 +885,14 @@ h3 {
 
   .art-2, .art-4 {
     padding: 0 50px 10px 30px;
+  }
+
+  .btm h2, .btm span {
+    font-size: 1.8em;
+  }
+
+  .btm h2 {
+    margin-bottom: 30px;
   }
 }
 @media all and (min-width: 950px) {
