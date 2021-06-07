@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: $color3;
+  background: $color4;
 }
 
 .container-principal {
@@ -33,6 +33,10 @@ h1, h2, h3, p, a, a:hover {
 ul {
   list-style: none;
   padding: 0;
+}
+
+.logo:hover, .search a:hover .back-to-top a:hover {
+  border: none;
 }
 
 
