@@ -329,7 +329,7 @@ header {
 }
 
 .images {
-  width: 100vw;
+  width: 100%;
   display: flex;
   animation-duration: 15s;
   animation-name: mesImages;
@@ -337,7 +337,7 @@ header {
 }
 
 .images img {
-  width: 100vw;
+  width: 100%;
 }
 
 @keyframes mesImages {
@@ -504,32 +504,7 @@ header {
   }
 
   .images img {
-    width: 100vw;
-  }
-
-  @keyframes mesImages {
-    0%, 25% {
-      transform: translateX(0);
-    }
-    30%, 75% {
-      transform: translateX(-100%);
-    }
-    80%, 100% {
-      transform: translateX(0);
-    }
-  }
-}
-@media all and (min-width: 2560px) {
-  .caroussel {
     width: 100%;
-  }
-
-  .images {
-    width: 100%;
-  }
-
-  .images img {
-    width: 56.25vw;
   }
 
   @keyframes mesImages {
