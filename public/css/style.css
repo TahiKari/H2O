@@ -144,12 +144,15 @@ body {
 }
 @media all and (min-width: 1200px) {
   .btn-don {
-    font-size: 1.5em;
+    font-size: 1.3em;
+    position: relative;
+    top: 2px;
   }
 }
 @media all and (min-width: 1440px) {
   .btn-don {
     font-size: 1.6em;
+    top: 3px;
   }
 }
 .btn-search {
@@ -189,13 +192,19 @@ body {
 }
 @media all and (min-width: 1200px) {
   .btn-search {
-    font-size: 1.7em;
+    position: relative;
+    font-size: 1.5em;
+    top: 1.5px;
+  }
+}
+@media all and (min-width: 1440px) {
+  .btn-search {
+    top: 4px;
   }
 }
 @media all and (min-width: 2100px) {
   .btn-search {
     font-size: 1.7em;
-    position: relative;
     right: -10px;
   }
 }
@@ -420,7 +429,7 @@ header {
   .header-top {
     position: relative;
     height: 25px;
-    padding: 50px 30px;
+    padding: 40px 30px 25px;
   }
 
   .logo {
@@ -467,7 +476,7 @@ header {
 }
 @media all and (min-width: 1024px) {
   .header-top {
-    padding: 20px 30px 30px;
+    padding: 30px 30px 30px;
   }
 
   .logo img {
@@ -580,10 +589,6 @@ main {
   max-width: 1550px;
   background: #fff;
   padding-top: 20px;
-}
-
-h1 {
-  background: lightgreen;
 }
 
 h2 {

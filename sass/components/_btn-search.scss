@@ -41,14 +41,21 @@
 
 @media all and (min-width: 1200px) {
   .btn-search {
-    font-size: 1.7em;
+    position: relative;
+    font-size: 1.5em;
+    top: 1.5px;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .btn-search {
+    top: 4px;
   }
 }
 
 @media all and (min-width: 2100px) {
   .btn-search {
     font-size: 1.7em;
-    position: relative;
     right: -10px;
   }
 }

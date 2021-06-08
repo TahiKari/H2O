@@ -182,7 +182,7 @@ header {
   .header-top {
     position: relative;
     height: 25px;
-    padding: 50px 30px;
+    padding: 40px 30px 25px;
   }
 
   .logo {
@@ -230,7 +230,7 @@ header {
 
 @media all and (min-width: 1024px) {
   .header-top {
-    padding: 20px 30px 30px;
+    padding: 30px 30px 30px;
   }
 
   .logo img {
