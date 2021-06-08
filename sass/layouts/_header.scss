@@ -1,4 +1,11 @@
 /* Header */
+.topbar, 
+.menu, 
+.search, 
+.caroussel {
+  width: 100%;
+}
+
 header {
   background: $color2;
 }
@@ -242,6 +249,7 @@ header {
     height: 300px;
   }
 }
+
 @media all and (min-width: 1200px) {
   .header-top {
     padding: 25px 50px 45px;
@@ -254,7 +262,6 @@ header {
   .search {
     top: -61px;
   }
-
 }
 
 @media all and (min-width: 1440px) {

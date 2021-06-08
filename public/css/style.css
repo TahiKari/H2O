@@ -47,28 +47,6 @@ ul {
   border: none;
 }
 
-.topbar,
-.menu,
-.search,
-.caroussel,
-.card h3,
-.card-inner,
-.card-front,
-.card-back,
-.content-top,
-.content-btm,
-.art,
-.pub,
-.pub-logo {
-  width: 100%;
-}
-
-@media all and (min-width: 950px) {
-  .card-3,
-.center {
-    width: 100%;
-  }
-}
 html {
   box-sizing: border-box;
 }
@@ -264,6 +242,13 @@ body {
   }
 }
 /* Header */
+.topbar,
+.menu,
+.search,
+.caroussel {
+  width: 100%;
+}
+
 header {
   background: #31424a;
 }
@@ -609,6 +594,18 @@ h3 {
   font-size: 1.2em;
 }
 
+.card h3,
+.card-inner,
+.card-front,
+.card-back,
+.content-top,
+.content-btm,
+.art,
+.pub,
+.pub-logo {
+  width: 100%;
+}
+
 .top {
   margin-bottom: 20px;
   padding: 0 10px;
@@ -941,6 +938,11 @@ h3 {
     grid-template-areas: "card-1 card-2 card-3";
     gap: 10px;
     padding: 0 10px;
+  }
+
+  .center,
+.card-3 {
+    width: 100%;
   }
 
   .card-1 {
