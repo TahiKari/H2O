@@ -1,12 +1,12 @@
-@import "utils/variables.scss";
-@import "utils/mixins.scss";
-@import "base/general.scss";
-@import "base/normalize.scss";
-@import "components/btn-menu.scss";
-@import "components/btn-don.scss";
-@import "components/btn-search.scss";
-@import "components/btn-back-to-top.scss";
-@import "layouts/header.scss";
-@import "layouts/footer.scss";
-@import "pages/content.scss";
-
+@import "utils/_variables.scss";
+@import "utils/_mixins.scss";
+@import "base/_general.scss";
+@import "base/_reset.scss";
+@import "components/_btn-menu.scss";
+@import "components/_btn-don.scss";
+@import "components/_btn-search.scss";
+@import "components/_btn-back-to-top.scss";
+@import "layouts/_header.scss";
+@import "layouts/_footer.scss";
+@import "pages/_content.scss";
+@import "pages/_l-ong.scss";

@@ -482,7 +482,7 @@ header {
 }
 @media all and (min-width: 1024px) {
   .header-top {
-    padding: 50px 30px 60px;
+    padding: 20px 30px 30px;
   }
 
   .logo img {
@@ -503,15 +503,11 @@ header {
 }
 @media all and (min-width: 1200px) {
   .header-top {
-    padding: 50px 50px 70px;
+    padding: 25px 50px 45px;
   }
 
   .logo img {
     width: 150px;
-  }
-
-  .menu-desktop a {
-    font-size: 1.2em;
   }
 
   .search {
@@ -520,7 +516,7 @@ header {
 }
 @media all and (min-width: 1440px) {
   .header-top {
-    padding: 50px 50px 80px;
+    padding: 30px 50px 50px;
   }
 
   .logo img {
@@ -528,11 +524,19 @@ header {
   }
 
   .menu-desktop a {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .search {
     top: -67px;
+  }
+
+  .caroussel {
+    height: auto;
+  }
+
+  .images img {
+    height: auto;
   }
 }
 footer {
@@ -849,6 +853,10 @@ h3 {
 
   .btm h2,
 .btm span {
+    font-size: 1.5em;
+  }
+
+  .btm h2, .btm span {
     font-size: 1.5em;
   }
 }
