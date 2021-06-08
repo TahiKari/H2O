@@ -339,7 +339,6 @@ h3 {
 
 @media all and (min-width: 950px) {
   main {
-    max-width: 100%;
     padding: 40px 0;
   }
 
@@ -362,7 +361,7 @@ h3 {
     grid-template-areas:
       "card-1 card-2 card-3";
     gap: 10px;
-    padding: 0 40px;
+    padding: 0 10px;
   }
 
   .card-1 {
@@ -405,6 +404,10 @@ h3 {
 }
 
 @media all and (min-width: 1024px) {
+  .top-container {
+    padding: 0 40px;
+  }
+
   .center-container {
     margin: 0 55px;
   }
