@@ -1,3 +1,4 @@
+/* Général */
 body {
   font-size: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -16,12 +17,20 @@ a:hover {
   border-bottom: 2px solid $color1;
 }
 
-h1, h2, h3, p {
+h1, 
+h2, 
+h3, 
+p {
   text-align: center;
   margin: 0 auto;
 }
 
-h1, h2, h3, p, a, a:hover {
+h1, 
+h2, 
+h3, 
+p, 
+a, 
+a:hover {
   color: $color1;
 }
 
@@ -30,8 +39,34 @@ ul {
   padding: 0;
 }
 
-.logo:hover, .search a:hover .back-to-top a:hover, .pub-logo:hover, .back-to-top a:hover {
+.logo:hover, 
+.search a:hover, 
+.pub-logo:hover, 
+.back-to-top a:hover {
   border: none;
+}
+
+.topbar, 
+.menu, 
+.search, 
+.caroussel, 
+.card h3, 
+.card-inner, 
+.card-front, 
+.card-back, 
+.content-top, 
+.content-btm, 
+.art, 
+.pub, 
+.pub-logo {
+  width: 100%;
+}
+
+@media all and (min-width: 950px) {
+  .card-3, 
+  .center {
+    width: 100%;
+  }
 }
 
 

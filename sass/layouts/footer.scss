@@ -24,7 +24,9 @@ footer li {
   line-height: 35px;
 }
 
-.footer-menu_infos, .footer-menu_presse, .footer-menu_faq {
+.footer-menu_infos, 
+.footer-menu_presse, 
+.footer-menu_faq {
 
   @include flex-col-center;
 }
@@ -35,7 +37,8 @@ footer li {
     flex-direction: row;
     justify-content: space-around;
   }
-  footer p, footer a {
+  footer p, 
+  footer a {
     font-size: 1.1em;
   }
 }

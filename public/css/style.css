@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Général */
 body {
   font-size: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -16,12 +18,20 @@ a:hover {
   border-bottom: 2px solid #009fe3;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   text-align: center;
   margin: 0 auto;
 }
 
-h1, h2, h3, p, a, a:hover {
+h1,
+h2,
+h3,
+p,
+a,
+a:hover {
   color: #009fe3;
 }
 
@@ -30,10 +40,35 @@ ul {
   padding: 0;
 }
 
-.logo:hover, .search a:hover .back-to-top a:hover, .pub-logo:hover, .back-to-top a:hover {
+.logo:hover,
+.search a:hover,
+.pub-logo:hover,
+.back-to-top a:hover {
   border: none;
 }
 
+.topbar,
+.menu,
+.search,
+.caroussel,
+.card h3,
+.card-inner,
+.card-front,
+.card-back,
+.content-top,
+.content-btm,
+.art,
+.pub,
+.pub-logo {
+  width: 100%;
+}
+
+@media all and (min-width: 950px) {
+  .card-3,
+.center {
+    width: 100%;
+  }
+}
 html {
   box-sizing: border-box;
 }
@@ -47,7 +82,7 @@ body {
 }
 
 .btn-menu img {
-  width: 80%;
+  width: 60%;
 }
 
 .btn-menu:active {
@@ -56,17 +91,17 @@ body {
 
 @media all and (min-width: 375px) {
   .btn-menu img {
-    width: 85%;
+    width: 70%;
   }
 }
 @media all and (min-width: 425px) {
   .btn-menu {
-    width: 90%;
+    width: 80%;
   }
 }
 @media all and (min-width: 768px) {
   .btn-menu img {
-    width: 100%;
+    width: 90%;
   }
 }
 @media only screen and (min-width: 950px) {
@@ -112,7 +147,7 @@ body {
 }
 @media all and (min-width: 768px) {
   .btn-don {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 }
 @media all and (min-width: 950px) {
@@ -228,6 +263,7 @@ body {
     font-size: 3.5em;
   }
 }
+/* Header */
 header {
   background: #31424a;
 }
@@ -239,7 +275,6 @@ header {
 }
 
 .topbar {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -277,7 +312,6 @@ header {
   position: absolute;
   top: 7.7em;
   left: 0;
-  width: 100%;
   z-index: 1;
   padding-bottom: 10px;
 }
@@ -305,7 +339,6 @@ header {
 /* Barre de recherche et bouton recherche */
 .search {
   margin: 20px auto 0;
-  width: 100%;
 }
 
 .search form {
@@ -331,7 +364,6 @@ header {
 
 /* Caroussel */
 .caroussel {
-  width: 100%;
   margin-top: 20px;
   overflow: hidden;
 }
@@ -529,7 +561,9 @@ footer li {
   line-height: 35px;
 }
 
-.footer-menu_infos, .footer-menu_presse, .footer-menu_faq {
+.footer-menu_infos,
+.footer-menu_presse,
+.footer-menu_faq {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -543,7 +577,8 @@ footer li {
     justify-content: space-around;
   }
 
-  footer p, footer a {
+  footer p,
+footer a {
     font-size: 1.1em;
   }
 }
@@ -596,12 +631,10 @@ h3 {
 }
 
 .card h3 {
-  width: 100%;
   padding: 10px 0;
 }
 
 .card-inner {
-  width: 100%;
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
@@ -611,15 +644,17 @@ h3 {
   transform: rotateX(180deg);
 }
 
-.card-front, .card-back {
-  width: 100%;
+.card-front,
+.card-back {
   height: 100%;
   backface-visibility: hidden;
   background: #f8f8f8;
   box-shadow: 1px 1px 10px 1px #c1c7c9;
 }
 
-.card-front, .card-front img, .card-back {
+.card-front,
+.card-front img,
+.card-back {
   border-radius: 5px;
 }
 
@@ -640,8 +675,6 @@ h3 {
   justify-content: center;
   align-items: center;
   font-size: 1.1em;
-  height: 100%;
-  width: 100%;
   margin-bottom: 10px;
   background: #f8f8f8;
   border-radius: 5px;
@@ -690,22 +723,20 @@ h3 {
   font-size: 0.8em;
 }
 
-.content-top, .content-btm {
-  width: 100%;
+.content-top,
+.content-btm {
   display: flex;
   justify-content: space-between;
 }
 
-.art-1, .art-3 {
+.art-1,
+.art-3 {
   padding: 0 10px 10px 20px;
 }
 
-.art-2, .art-4 {
+.art-2,
+.art-4 {
   padding: 0 20px 10px 10px;
-}
-
-.art {
-  width: 100%;
 }
 
 .art h3 {
@@ -724,7 +755,8 @@ h3 {
   grid-template-areas: "." "btm-span" "btm-h2" "pub" ".";
 }
 
-.btm h2, .btm span {
+.btm h2,
+.btm span {
   font-size: 1.3em;
 }
 
@@ -753,7 +785,6 @@ h3 {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "pub-1 . pub-2" ". pub-3 ." "pub-4 . pub-5";
   max-height: 400px;
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -761,7 +792,6 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 .pub-1 {
@@ -784,11 +814,13 @@ h3 {
   grid-area: pub-5;
 }
 
-.pub-1, .pub-4 {
+.pub-1,
+.pub-4 {
   justify-content: flex-end;
 }
 
-.pub-2, .pub-5 {
+.pub-2,
+.pub-5 {
   justify-content: flex-start;
 }
 
@@ -801,7 +833,8 @@ h3 {
     font-size: 0.9em;
   }
 
-  .btm h2, .btm span {
+  .btm h2,
+.btm span {
     font-size: 1.4em;
   }
 
@@ -814,7 +847,8 @@ h3 {
     font-size: 1em;
   }
 
-  .btm h2, .btm span {
+  .btm h2,
+.btm span {
     font-size: 1.5em;
   }
 }
@@ -848,11 +882,6 @@ h3 {
     height: 100%;
   }
 
-  .card-front,
-.card-back {
-    width: 100%;
-  }
-
   .card-front img {
     width: 90%;
   }
@@ -861,15 +890,18 @@ h3 {
     font-size: 1.1em;
   }
 
-  .art-1, .art-3 {
+  .art-1,
+.art-3 {
     padding: 0 30px 10px 50px;
   }
 
-  .art-2, .art-4 {
+  .art-2,
+.art-4 {
     padding: 0 50px 10px 30px;
   }
 
-  .btm h2, .btm span {
+  .btm h2,
+.btm span {
     font-size: 1.8em;
   }
 
@@ -913,12 +945,7 @@ h3 {
 
   .card-3 {
     grid-area: card-3;
-    width: 100%;
     left: 0;
-  }
-
-  .center {
-    width: 100%;
   }
 
   .center h2 {
@@ -929,11 +956,13 @@ h3 {
     font-size: 1.3em;
   }
 
-  .art-1, .art-3 {
+  .art-1,
+.art-3 {
     padding: 0 80px 10px 100px;
   }
 
-  .art-2, .art-4 {
+  .art-2,
+.art-4 {
     padding: 0 100px 10px 80px;
   }
 
@@ -950,11 +979,13 @@ h3 {
     margin: 0 55px;
   }
 
-  .art-1, .art-3 {
+  .art-1,
+.art-3 {
     padding: 0 110px 10px 130px;
   }
 
-  .art-2, .art-4 {
+  .art-2,
+.art-4 {
     padding: 0 130px 10px 110px;
   }
 }
@@ -975,11 +1006,13 @@ h3 {
     font-size: 1.5em;
   }
 
-  .art-1, .art-3 {
+  .art-1,
+.art-3 {
     padding: 0 150px 10px 170px;
   }
 
-  .art-2, .art-4 {
+  .art-2,
+.art-4 {
     padding: 0 170px 10px 150px;
   }
 
@@ -988,7 +1021,8 @@ h3 {
   }
 }
 @media all and (min-width: 1440px) {
-  .btm h2, .btm span {
+  .btm h2,
+.btm span {
     font-size: 2em;
   }
 
