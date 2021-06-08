@@ -44,3 +44,11 @@
     font-size: 1.7em;
   }
 }
+
+@media all and (min-width: 2100px) {
+  .btn-search {
+    font-size: 1.7em;
+    position: relative;
+    right: -10px;
+  }
+}

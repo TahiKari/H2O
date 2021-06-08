@@ -404,7 +404,10 @@ h3 {
   };
 }
 
-@media all and (min-width: 1240px) {
+@media all and (min-width: 1024px) {
+  .center-container {
+    margin: 0 55px;
+  }
   .art-1, .art-3 {
     padding: 0 110px 10px 130px;
   }
@@ -450,5 +453,12 @@ h3 {
 
   .btm h2 {
     margin-bottom: 50px;
+  }
+}
+
+@media all and (min-width: 1537px) {
+  main {
+    max-width: 1536px;
+    margin: 0 auto;
   }
 }

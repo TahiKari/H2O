@@ -4,13 +4,6 @@ body {
   background: #fff;
 }
 
-.container-principal {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0;
-  box-shadow: 1px 1px 10px 1px #47494A;
-}
-
 ul {
   list-style: none;
 }
@@ -37,7 +30,7 @@ ul {
   padding: 0;
 }
 
-.logo:hover, .search a:hover .back-to-top a:hover, .pub-logo:hover {
+.logo:hover, .search a:hover .back-to-top a:hover, .pub-logo:hover, .back-to-top a:hover {
   border: none;
 }
 
@@ -186,44 +179,57 @@ body {
     font-size: 1.7em;
   }
 }
+@media all and (min-width: 2100px) {
+  .btn-search {
+    font-size: 1.7em;
+    position: relative;
+    right: -10px;
+  }
+}
 .back-to-top {
   position: fixed;
-  right: 4.5vw;
+  right: 5%;
   bottom: 10px;
+  border-radius: 5px;
 }
 
-@media all and (min-width: 375px) {
-  .back-to-top {
-    right: 4vw;
-  }
+.fa-chevron-up {
+  font-size: 1.5em;
+  color: #7dd8ff;
 }
-@media all and (min-width: 425px) {
-  .back-to-top {
-    right: 3vw;
-  }
-}
+
 @media all and (min-width: 768px) {
   .back-to-top {
-    right: 1.7vw;
+    right: 2%;
+    bottom: 10px;
   }
 
-  .back-to-top img {
-    width: 7.5vw;
+  .fa-chevron-up {
+    font-size: 2em;
   }
 }
-@media all and (min-width: 950px) {
+@media all and (min-width: 1024px) {
+  .fa-chevron-up {
+    font-size: 2.5em;
+  }
+}
+@media all and (min-width: 1024px) {
+  .fa-chevron-up {
+    font-size: 3em;
+  }
+}
+@media all and (min-width: 1440px) {
   .back-to-top {
     right: 3%;
-    bottom: 40px;
+    bottom: 30px;
   }
 
-  .back-to-top img {
-    width: 4vw;
+  .fa-chevron-up {
+    font-size: 3.5em;
   }
 }
 header {
   background: #31424a;
-  max-width: 1440px;
 }
 
 .header-top {
@@ -331,7 +337,7 @@ header {
 }
 
 .images {
-  width: 100%;
+  width: 100vw;
   display: flex;
   animation-duration: 15s;
   animation-name: mesImages;
@@ -339,7 +345,7 @@ header {
 }
 
 .images img {
-  width: 100%;
+  width: 100vw;
 }
 
 @keyframes mesImages {
@@ -495,30 +501,6 @@ header {
 
   .search {
     top: -67px;
-  }
-
-  .caroussel {
-    width: 100%;
-  }
-
-  .images {
-    width: 100%;
-  }
-
-  .images img {
-    width: 100%;
-  }
-
-  @keyframes mesImages {
-    0%, 25% {
-      transform: translateX(0);
-    }
-    30%, 75% {
-      transform: translateX(-100%);
-    }
-    80%, 100% {
-      transform: translateX(0);
-    }
   }
 }
 footer {
@@ -960,7 +942,11 @@ h3 {
     width: 50%;
   }
 }
-@media all and (min-width: 1240px) {
+@media all and (min-width: 1024px) {
+  .center-container {
+    margin: 0 55px;
+  }
+
   .art-1, .art-3 {
     padding: 0 110px 10px 130px;
   }
@@ -1005,6 +991,12 @@ h3 {
 
   .btm h2 {
     margin-bottom: 50px;
+  }
+}
+@media all and (min-width: 1537px) {
+  main {
+    max-width: 1536px;
+    margin: 0 auto;
   }
 }
 

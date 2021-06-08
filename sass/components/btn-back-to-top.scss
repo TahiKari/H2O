@@ -1,38 +1,45 @@
 .back-to-top {
   position: fixed;
-  right: 4.5vw;
+  right: 5%;
   bottom: 10px;
+  border-radius: 5px;
 }
 
-@media all and (min-width: 375px) {
-  .back-to-top {
-    right: 4vw;
-  }
-}
-
-@media all and (min-width: 425px) {
-  .back-to-top {
-    right: 3vw;
-  }
+.fa-chevron-up {
+  font-size: 1.5em;
+  color: lighten($color1, 30);
 }
 
 @media all and (min-width: 768px) {
   .back-to-top {
-    right: 1.7vw;
+    right: 2%;
+    bottom: 10px;
   }
 
-  .back-to-top img {
-    width: 7.5vw;
+  .fa-chevron-up {
+    font-size: 2em;
   }
 }
 
-@media all and (min-width: 950px) {
+@media all and (min-width: 1024px) {
+  .fa-chevron-up {
+    font-size: 2.5em;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .fa-chevron-up {
+    font-size: 3em;
+  }
+}
+
+@media all and (min-width: 1440px) {
   .back-to-top {
     right: 3%;
-    bottom: 40px;
+    bottom: 30px;
   }
 
-  .back-to-top img {
-    width: 4vw;
+  .fa-chevron-up {
+    font-size: 3.5em;
   }
 }

@@ -4,13 +4,6 @@ body {
   background: $color4;
 }
 
-.container-principal {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0;
-  box-shadow: 1px 1px 10px 1px $color5;
-}
-
 ul{
   list-style: none;
 }
@@ -37,7 +30,7 @@ ul {
   padding: 0;
 }
 
-.logo:hover, .search a:hover .back-to-top a:hover, .pub-logo:hover {
+.logo:hover, .search a:hover .back-to-top a:hover, .pub-logo:hover, .back-to-top a:hover {
   border: none;
 }
 
