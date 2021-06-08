@@ -1,11 +1,14 @@
+footer, 
+.footer-menu_infos, 
+.footer-menu_presse, 
+.footer-menu_faq {
+
+  @include flex-col-center;
+}
+
 footer {
-  grid-area: footer;
   background: $color5;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: $color1;
   margin: 0;
   padding-top: 20px;
@@ -22,13 +25,6 @@ footer ul {
 footer li {
   text-align: center;
   line-height: 35px;
-}
-
-.footer-menu_infos, 
-.footer-menu_presse, 
-.footer-menu_faq {
-
-  @include flex-col-center;
 }
 
 @media all and (min-width: 600px) {

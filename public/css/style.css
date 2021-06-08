@@ -533,14 +533,19 @@ header {
     height: auto;
   }
 }
-footer {
-  grid-area: footer;
-  background: #47494A;
-  width: 100%;
+footer,
+.footer-menu_infos,
+.footer-menu_presse,
+.footer-menu_faq {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+footer {
+  background: #47494A;
+  width: 100%;
   color: #009fe3;
   margin: 0;
   padding-top: 20px;
@@ -557,15 +562,6 @@ footer ul {
 footer li {
   text-align: center;
   line-height: 35px;
-}
-
-.footer-menu_infos,
-.footer-menu_presse,
-.footer-menu_faq {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 @media all and (min-width: 600px) {
