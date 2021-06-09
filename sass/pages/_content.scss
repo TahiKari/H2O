@@ -1,3 +1,4 @@
+/* Contenu de la page Accueil */
 main {
   max-width: 1550px;
   background: $color4;
@@ -12,14 +13,14 @@ h3 {
   font-size: 1.2em;
 }
 
-.card h3, 
-.card-inner, 
-.card-front, 
-.card-back, 
-.content-top, 
-.content-btm, 
-.art, 
-.pub, 
+.card h3,
+.card-inner,
+.card-front,
+.card-back,
+.content-top,
+.content-btm,
+.art,
+.pub,
 .pub-logo {
   width: 100%;
 }
@@ -29,10 +30,12 @@ h3 {
   padding: 0 10px;
 }
 
-.top h2 {
-  margin: 30px auto 20px;
-  color: $color1;
-  width: 45%;
+.top {
+  & h2 {
+    margin: 30px auto 20px;
+    color: $color1;
+    width: 45%;
+  }
 }
 
 .top-container {
@@ -49,8 +52,10 @@ h3 {
   margin-bottom: 10px;
 }
 
-.card h3 {
-  padding: 10px 0;
+.card {
+  & h3 {
+    padding: 10px 0;
+  }
 }
 
 .card-inner {
@@ -59,11 +64,13 @@ h3 {
   transform-style: preserve-3d;
 }
 
-.card:hover .card-inner {
-  transform: rotateX(180deg);
+.card:hover {
+  & .card-inner {
+    transform: rotateX(180deg);
+  }
 }
 
-.card-front, 
+.card-front,
 .card-back {
   height: 100%;
   backface-visibility: hidden;
@@ -71,8 +78,8 @@ h3 {
   box-shadow: 1px 1px 10px 1px $color3;
 }
 
-.card-front, 
-.card-front img, 
+.card-front,
+.card-front img,
 .card-back {
   border-radius: 5px;
 }
@@ -109,12 +116,14 @@ h3 {
   height: auto;
 }
 
-.center h2 {
-  margin-bottom: 20px;
+.center {
+  & h2 {
+    margin-bottom: 20px;
+  }
 }
 
 .center::before {
-  content: '';
+  content: "";
   height: 2px;
   width: 90%;
   background: $color1;
@@ -123,7 +132,7 @@ h3 {
 }
 
 .center::after {
-  content: '';
+  content: "";
   width: 90%;
   height: 2px;
   background: $color1;
@@ -133,7 +142,7 @@ h3 {
 
 .center-container {
   height: auto;
-  background: url('../../ressources/images/main-livre-862x1166.png') no-repeat;
+  background: url("../../ressources/images/main-livre-862x1166.png") no-repeat;
   background-size: 100% 100%;
   padding: 20px 0;
   display: flex;
@@ -142,24 +151,26 @@ h3 {
   font-size: 0.8em;
 }
 
-.content-top, 
+.content-top,
 .content-btm {
   display: flex;
   justify-content: space-between;
 }
 
-.art-1, 
+.art-1,
 .art-3 {
   padding: 0 10px 10px 20px;
 }
 
-.art-2, 
+.art-2,
 .art-4 {
   padding: 0 20px 10px 10px;
 }
 
-.art h3 {
-  margin-bottom: 10px;
+.art {
+  & h3 {
+    margin-bottom: 10px;
+  }
 }
 
 .btm {
@@ -172,35 +183,39 @@ h3 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.8fr 0.2fr 0.2fr 2fr 0.8fr;
-  grid-template-areas: 
-  "."
-  "btm-span"
-  "btm-h2"
-  "pub"
-  ".";
+  grid-template-areas:
+    "."
+    "btm-span"
+    "btm-h2"
+    "pub"
+    ".";
 }
 
-.btm h2, 
+.btm h2,
 .btm span {
   font-size: 1.3em;
 }
 
-.btm h2 {
-  grid-area: btm-h2;
-  color: $color5;
-  display: flex;
-  align-self: center;
+.btm {
+  & h2 {
+    grid-area: btm-h2;
+    color: $color5;
+    display: flex;
+    align-self: center;
+  }
 }
 
-.btm span {
-  grid-area: btm-span;
-  position: relative;
-  right: 5vw;
-  display: flex;
-  align-self: center;
-  justify-self: center;
-  font-weight: bold;
-  color: rgba($color5, 0.7);
+.btm {
+  & span {
+    grid-area: btm-span;
+    position: relative;
+    right: 5vw;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    font-weight: bold;
+    color: rgba($color5, 0.7);
+  }
 }
 
 .pub {
@@ -208,10 +223,10 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: 
-  "pub-1 . pub-2"
-  ". pub-3 ."
-  "pub-4 . pub-5";
+  grid-template-areas:
+    "pub-1 . pub-2"
+    ". pub-3 ."
+    "pub-4 . pub-5";
   max-height: 400px;
   margin: 0 auto;
 }
@@ -242,18 +257,20 @@ h3 {
   grid-area: pub-5;
 }
 
-.pub-1, 
+.pub-1,
 .pub-4 {
   justify-content: flex-end;
 }
 
-.pub-2, 
+.pub-2,
 .pub-5 {
   justify-content: flex-start;
 }
 
-.btm img {
-  width: 80%;
+.btm {
+  & img {
+    width: 80%;
+  }
 }
 
 @media all and (min-width: 375px) {
@@ -261,13 +278,17 @@ h3 {
     font-size: 0.9em;
   }
 
-  .btm h2, 
-  .btm span {
-    font-size: 1.4em;
+  .btm {
+    & h2,
+    span {
+      font-size: 1.4em;
+    }
   }
 
-  .btm img {
-    width: 70%;
+  .btm {
+    & img {
+      width: 70%;
+    }
   }
 }
 
@@ -276,14 +297,17 @@ h3 {
     font-size: 1em;
   }
 
-  .btm h2, 
-  .btm span {
-    font-size: 1.5em;
+  .btm {
+    & h2,
+    span {
+      font-size: 1.5em;
+    }
   }
 
   .btm {
-    h2, span {
-      font-size: 1.5em
+    & h2,
+    span {
+      font-size: 1.5em;
     }
   }
 }
@@ -296,30 +320,30 @@ h3 {
     grid-template-areas:
       "card-1 card-1 card-2 card-2"
       "card-3 card-3 card-3 card-3";
-      gap: 10px;
-      padding: 0 20px;
+    gap: 10px;
+    padding: 0 20px;
   }
 
   .card-1 {
     grid-area: card-1;
   }
-  
+
   .card-2 {
     grid-area: card-2;
   }
-  
+
   .card-3 {
     grid-area: card-3;
     width: 70%;
     position: relative;
     left: 15%;
   }
-  
+
   .card {
     margin: 0;
     height: 100%;
   }
-  
+
   .card-front img {
     width: 90%;
   }
@@ -328,23 +352,27 @@ h3 {
     font-size: 1.1em;
   }
 
-  .art-1, 
+  .art-1,
   .art-3 {
     padding: 0 30px 10px 50px;
   }
-  
-  .art-2, 
+
+  .art-2,
   .art-4 {
     padding: 0 50px 10px 30px;
   }
 
-  .btm h2, 
-  .btm span {
-    font-size: 1.8em;
+  .btm {
+    & h2,
+    span {
+      font-size: 1.8em;
+    }
   }
 
-  .btm h2 {
-    margin-bottom: 30px;
+  .btm {
+    & h2 {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -364,13 +392,12 @@ h3 {
   h3 {
     font-size: 1.4em;
   }
-  
+
   .top-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas:
-      "card-1 card-2 card-3";
+    grid-template-areas: "card-1 card-2 card-3";
     gap: 10px;
     padding: 0 10px;
   }
@@ -383,37 +410,41 @@ h3 {
   .card-1 {
     grid-area: card-1;
   }
-  
+
   .card-2 {
     grid-area: card-2;
   }
-  
+
   .card-3 {
     grid-area: card-3;
     left: 0;
   }
 
-  .center h2 {
-    font-size: 2.2em;
+  .center {
+    & h2 {
+      font-size: 2.2em;
+    }
   }
 
   .center-container {
     font-size: 1.3em;
   }
 
-  .art-1, 
+  .art-1,
   .art-3 {
     padding: 0 80px 10px 100px;
   }
-  
-  .art-2, 
+
+  .art-2,
   .art-4 {
     padding: 0 100px 10px 80px;
   }
 
-  .btm img {
-    width: 50%
-  };
+  .btm {
+    & img {
+      width: 50%;
+    }
+  }
 }
 
 @media all and (min-width: 1024px) {
@@ -424,12 +455,12 @@ h3 {
   .center-container {
     margin: 0 55px;
   }
-  .art-1, 
+  .art-1,
   .art-3 {
     padding: 0 110px 10px 130px;
   }
-  
-  .art-2, 
+
+  .art-2,
   .art-4 {
     padding: 0 130px 10px 110px;
   }
@@ -444,36 +475,44 @@ h3 {
     font-size: 1.5em;
   }
 
-  .center h2 {
-    font-size: 2.5em;
+  .center {
+    & h2 {
+      font-size: 2.5em;
+    }
   }
 
   .center-container {
     font-size: 1.5em;
   }
-  .art-1, 
+  .art-1,
   .art-3 {
     padding: 0 150px 10px 170px;
   }
-  
-  .art-2, 
+
+  .art-2,
   .art-4 {
     padding: 0 170px 10px 150px;
   }
 
-  .btm img {
-    width: 40%;
+  .btm {
+    & img {
+      width: 40%;
+    }
   }
 }
 
 @media all and (min-width: 1440px) {
-  .btm h2, 
-  .btm span {
-    font-size: 2em;
+  .btm {
+    & h2,
+    span {
+      font-size: 2em;
+    }
   }
 
-  .btm h2 {
-    margin-bottom: 50px;
+  .btm {
+    & h2 {
+      margin-bottom: 50px;
+    }
   }
 }
 

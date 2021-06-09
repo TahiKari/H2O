@@ -1,8 +1,8 @@
-footer, 
-.footer-menu_infos, 
-.footer-menu_presse, 
+/* Footer */
+footer,
+.footer-menu_infos,
+.footer-menu_presse,
 .footer-menu_faq {
-
   @include flex-col-center;
 }
 
@@ -14,17 +14,23 @@ footer {
   padding-top: 20px;
 }
 
-footer p {
-  margin-bottom: 0;
+footer {
+  & p {
+    margin-bottom: 0;
+  }
 }
 
-footer ul {
-  padding: 0;
+footer {
+  & ul {
+    padding: 0;
+  }
 }
 
-footer li {
-  text-align: center;
-  line-height: 35px;
+footer {
+  & li {
+    text-align: center;
+    line-height: 35px;
+  }
 }
 
 @media all and (min-width: 600px) {
@@ -33,10 +39,12 @@ footer li {
     flex-direction: row;
     justify-content: space-around;
   }
-  footer p, 
-  footer a {
+  footer {
+    & p,
+    a {
     font-size: 1.1em;
   }
+}
 }
 
 @media all and (min-width: 1024px) {
