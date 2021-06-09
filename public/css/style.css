@@ -284,6 +284,8 @@ header {
 /* logo */
 .logo {
   order: 2;
+  position: relative;
+  left: -6px;
 }
 
 .logo img {
