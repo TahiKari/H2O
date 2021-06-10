@@ -37,6 +37,10 @@ a:hover {
   color: #009fe3;
 }
 
+h1 {
+  color: #47494A;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -598,31 +602,25 @@ h3 {
   font-size: 1.2em;
 }
 
-.card h3,
-.card-inner,
-.card-front,
-.card-back,
-.content-top,
-.content-btm,
-.art,
-.pub,
-.pub-logo {
-  width: 100%;
-}
-
-.top {
+.top-index {
   margin-bottom: 20px;
   padding: 0 10px;
 }
 
-.top h2 {
+.top-index h2 {
   margin: 30px auto 20px;
   color: #009fe3;
-  width: 45%;
 }
 
 .top-container {
   padding: 0 20px;
+}
+
+.card h3,
+.card-inner,
+.card-front,
+.card-back {
+  width: 100%;
 }
 
 .card {
@@ -690,16 +688,16 @@ h3 {
 }
 
 /* main centre */
-.center {
+.center-index {
   padding: 20px 0 30px;
   height: auto;
 }
 
-.center h2 {
+.center-index h2 {
   margin-bottom: 20px;
 }
 
-.center::before {
+.center-index::before {
   content: "";
   height: 2px;
   width: 90%;
@@ -708,7 +706,7 @@ h3 {
   margin: 20px auto;
 }
 
-.center::after {
+.center-index::after {
   content: "";
   width: 90%;
   height: 2px;
@@ -726,6 +724,12 @@ h3 {
   flex-direction: column;
   justify-content: center;
   font-size: 0.8em;
+}
+
+.content-top,
+.content-btm,
+.art {
+  width: 100%;
 }
 
 .content-top,
@@ -748,9 +752,9 @@ h3 {
   margin-bottom: 10px;
 }
 
-.btm {
+.btm-index {
   height: auto;
-  background: no-repeat url("../../ressources/images/bg-rectangle-blue-320x750.png");
+  background: no-repeat url("../../ressources/images/bg-rectangle-bleu_856x1157.png");
   background-size: 100% 100%;
   padding: 0 20px;
   margin-bottom: 30px;
@@ -760,19 +764,19 @@ h3 {
   grid-template-areas: "." "btm-span" "btm-h2" "pub" ".";
 }
 
-.btm h2,
-.btm span {
+.btm-index-index h2,
+.btm-index-index span {
   font-size: 1.3em;
 }
 
-.btm h2 {
+.btm-index h2 {
   grid-area: btm-h2;
   color: #47494A;
   display: flex;
   align-self: center;
 }
 
-.btm span {
+.btm-index span {
   grid-area: btm-span;
   position: relative;
   right: 5vw;
@@ -781,6 +785,11 @@ h3 {
   justify-self: center;
   font-weight: bold;
   color: rgba(71, 73, 74, 0.7);
+}
+
+.pub,
+.pub-logo {
+  width: 100%;
 }
 
 .pub {
@@ -829,7 +838,7 @@ h3 {
   justify-content: flex-start;
 }
 
-.btm img {
+.btm-index img {
   width: 80%;
 }
 
@@ -838,12 +847,12 @@ h3 {
     font-size: 0.9em;
   }
 
-  .btm h2,
-.btm span {
+  .btm-index h2,
+.btm-index span {
     font-size: 1.4em;
   }
 
-  .btm img {
+  .btm-index img {
     width: 70%;
   }
 }
@@ -852,13 +861,13 @@ h3 {
     font-size: 1em;
   }
 
-  .btm h2,
-.btm span {
+  .btm-index h2,
+.btm-index span {
     font-size: 1.5em;
   }
 
-  .btm h2,
-.btm span {
+  .btm-index h2,
+.btm-index span {
     font-size: 1.5em;
   }
 }
@@ -910,12 +919,12 @@ h3 {
     padding: 0 50px 10px 30px;
   }
 
-  .btm h2,
-.btm span {
+  .btm-index h2,
+.btm-index span {
     font-size: 1.8em;
   }
 
-  .btm h2 {
+  .btm-index h2 {
     margin-bottom: 30px;
   }
 }
@@ -963,7 +972,7 @@ h3 {
     left: 0;
   }
 
-  .center h2 {
+  .center-index h2 {
     font-size: 2.2em;
   }
 
@@ -981,7 +990,7 @@ h3 {
     padding: 0 100px 10px 80px;
   }
 
-  .btm img {
+  .btm-index img {
     width: 50%;
   }
 }
@@ -1013,7 +1022,7 @@ h3 {
     font-size: 1.5em;
   }
 
-  .center h2 {
+  .center-index h2 {
     font-size: 2.5em;
   }
 
@@ -1031,17 +1040,17 @@ h3 {
     padding: 0 170px 10px 150px;
   }
 
-  .btm img {
+  .btm-index img {
     width: 40%;
   }
 }
 @media all and (min-width: 1440px) {
-  .btm h2,
-.btm span {
+  .btm-index h2,
+.btm-index span {
     font-size: 2em;
   }
 
-  .btm h2 {
+  .btm-index h2 {
     margin-bottom: 50px;
   }
 }
@@ -1052,8 +1061,113 @@ h3 {
   }
 }
 /* Contenu page l'ong */
-h1 {
-  color: #31424a;
+.main-ong h2,
+.main-ong p {
+  color: #47494A;
+}
+
+.top-ong {
+  margin: 20px 20px 50px;
+}
+
+.top-ong h2 {
+  margin-bottom: 15px;
+  color: .top-ong h2 color1;
+}
+
+.top-ong h2, .top-ong p {
+  color: #009fe3;
+}
+
+.center-ong {
+  height: auto;
+  background: no-repeat url("../../ressources/images/bg-rectangle-bleu_856x1157.png");
+  background-size: 100% 100%;
+  padding: 50px 20px 0;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.1fr 0.1fr auto 1fr;
+  grid-template-areas: "." "center-ong-h2" "center-ong_p1" "center-ong-img" "center-ong_p2";
+  gap: 10px;
+}
+
+.center-ong h2 {
+  grid-area: center-ong-h2;
+}
+
+.center-ong_p1 {
+  grid-area: center-ong_p1;
+}
+
+.center-ong_p2 {
+  grid-area: center-ong_p2;
+}
+
+.center-ong img {
+  grid-area: center-ong-img;
+}
+
+.center-ong_p2 {
+  font-size: 0.8em;
+}
+
+.center-ong img,
+.btm-ong img {
+  width: 100%;
+}
+
+.btm-ong {
+  height: auto;
+  background: no-repeat url("../../ressources/images/bg-rectangle-gris_860x1253.png");
+  background-size: 100% 100%;
+  padding: 50px 20px 0;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 0.1fr 0.1fr 1fr;
+  grid-template-areas: "." "btm-h2" "btm-p" "btm-img";
+  gap: 10px;
+}
+
+.btm-h2 {
+  grid-area: btm-h2;
+}
+
+.btm-p {
+  grid-area: btm-p;
+}
+
+.btm-img {
+  grid-area: btm-img;
+}
+
+@media all and (min-width: 425px) {
+  .center-ong {
+    padding: 100px 20px 0;
+  }
+}
+@media all and (min-width: 768px) {
+  .top-ong {
+    margin: 20px 20px 50px;
+  }
+
+  .center-ong {
+    padding: 150px 20px 0;
+  }
+}
+@media all and (min-width: 1024px) {
+  .main-ong {
+    font-size: 1.3em;
+  }
+
+  .top-ong {
+    margin: 20px 20px 50px;
+  }
+
+  .center-ong {
+    padding: 250px 20px 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
