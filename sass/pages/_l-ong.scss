@@ -13,17 +13,15 @@
 .top-ong {
   & h2 {
     margin-bottom: 15px;
-    color: &color1;
   }
 }
 
-
-  .top-ong {
-    & h2, p {
-      color: $color1;
-    }
+.top-ong {
+  & h2,
+  p {
+    color: $color1;
   }
-
+}
 
 .center-ong {
   height: auto;

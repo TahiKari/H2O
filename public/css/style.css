@@ -1072,10 +1072,10 @@ h3 {
 
 .top-ong h2 {
   margin-bottom: 15px;
-  color: .top-ong h2 color1;
 }
 
-.top-ong h2, .top-ong p {
+.top-ong h2,
+.top-ong p {
   color: #009fe3;
 }
 
