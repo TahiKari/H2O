@@ -5,7 +5,7 @@ body {
   background: $color4;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
@@ -17,25 +17,26 @@ a:hover {
   border-bottom: 2px solid $color1;
 }
 
-h1, 
-h2, 
-h3, 
+h1,
+h2,
+h3,
 p {
   text-align: center;
   margin: 0 auto;
 }
 
-h1, 
-h2, 
-h3, 
-p, 
-a, 
+h1,
+h2,
+h3,
+p,
+a,
 a:hover {
   color: $color1;
 }
 
 h1 {
   color: $color5;
+  margin-bottom: 30px;
 }
 
 ul {
@@ -43,11 +44,9 @@ ul {
   padding: 0;
 }
 
-.logo:hover, 
-.search a:hover, 
-.pub-logo:hover, 
+.logo:hover,
+.search a:hover,
+.pub-logo:hover,
 .back-to-top a:hover {
   border: none;
 }
-
-

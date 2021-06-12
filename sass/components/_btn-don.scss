@@ -22,7 +22,7 @@
 .btn-don:hover {
   background: $color1;
   color: $color2;
-  transition-duration: .1s;
+  transition-duration: 0.1s;
 }
 
 @media all and (min-width: 375px) {
@@ -73,4 +73,3 @@
     top: 3px;
   }
 }
-

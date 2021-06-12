@@ -20,7 +20,7 @@ h3 {
 
 .top-index {
   & h2 {
-    margin: 30px auto 20px;
+    margin: 0 auto 20px;
     color: $color1;
   }
 }
@@ -105,7 +105,7 @@ h3 {
 }
 
 /* main centre */
-.center-index{
+.center-index {
   padding: 20px 0 30px;
   height: auto;
 }
@@ -191,7 +191,7 @@ h3 {
     ".";
 }
 
-.btm-index-index {
+.btm-index {
   & h2,
   span {
     font-size: 1.3em;
@@ -389,7 +389,7 @@ h3 {
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 3.5em;
   }
 
   h2 {
@@ -459,9 +459,8 @@ h3 {
     padding: 0 40px;
   }
 
-  .center-container {
-    margin: 0 55px;
-  }
+  
+
   .art-1,
   .art-3 {
     padding: 0 110px 10px 130px;
