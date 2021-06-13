@@ -3,7 +3,7 @@
 }
 
 .top-event {
-  & h2, 
+  & h2,
   p {
     color: $color1;
   }
@@ -16,15 +16,8 @@
 }
 
 .center-event {
-  height: auto;
   background: no-repeat
     url("../../ressources/images/bg-rectangle-bleu_856x1157.png");
-  background-size: 100% 100%;
-  padding: 0 30px 0;
-  margin-bottom: 30px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.6fr 0.2fr 1fr 0.5fr;
   grid-template-areas:
     "."
     "center-event-h2"
@@ -42,21 +35,26 @@
 }
 
 .btm-event {
-  height: auto;
   background: no-repeat
     url("../../ressources/images/bg-rectangle-gris_860x1253.png");
-  background-size: 100% 100%;
-  padding: 0 20px 0;
-  margin-bottom: 30px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.6fr 0.2fr 1fr 0.5fr;
+    background-size: 100% 100%;
   grid-template-areas:
     "."
     "btm-event-h2"
     "btm-event-p"
     ".";
   gap: 10px;
+}
+
+.center-event,
+.btm-event {
+  height: auto;
+  background-size: 100% 100%;
+  padding: 0 30px 0;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.6fr 0.2fr 1fr 0.5fr;
 }
 
 .btm-event h2 {
@@ -66,5 +64,3 @@
 .btm-event p {
   grid-area: btm-event-p;
 }
-
-
