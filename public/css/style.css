@@ -565,17 +565,22 @@ footer li {
   line-height: 35px;
 }
 
-footer span {
-  grid-area: copyright;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.infos-general span, .infos-general a, .fa-copyright {
   font-size: 0.8em;
 }
 
+.infos-general span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer i {
+  position: relative;
+  top: 1.5px;
+}
+
 .fa-copyright {
-  font-size: 0.8em;
   padding-right: 3px;
 }
 
@@ -587,8 +592,8 @@ footer span {
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.1fr 0.1fr 0.1fr;
-    grid-template-areas: "footer-nav1 footer-nav2 footer-nav3" "infos-site infos-site infos-site" ". copyright ." ". w3c .";
+    grid-template-rows: 1fr 0.1fr;
+    grid-template-areas: "footer-nav1 footer-nav2 footer-nav3" "infos-general infos-general infos-general";
     padding: 50px 0 0;
   }
 
@@ -609,34 +614,39 @@ footer a {
     grid-area: footer-nav3;
   }
 
-  footer span {
-    grid-area: copyright;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .infos-general span {
     font-size: 0.8em;
   }
 
-  .infos-site {
-    grid-area: infos-site;
-    font-size: 0.7em;
-    margin: 0 auto;
+  .infos-general {
+    grid-area: infos-general;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .infos-site ul {
+  .infos-general ul {
     margin-top: 0;
     width: 100%;
   }
 
-  .infos-site li {
+  .infos-general li {
     display: inline;
     padding: 0 10px;
   }
 
-  .infos-site li:nth-child(1), .infos-site li:nth-child(2) {
+  .infos-general li:nth-child(1), .infos-general li:nth-child(2) {
     border-right: 1px solid #009fe3;
     padding-right: 15px;
+  }
+
+  .infos-general nav {
+    grid-area: cgu;
+  }
+
+  .infos-general p {
+    grid-area: copyright;
   }
 
   .w3c {
@@ -647,13 +657,27 @@ footer a {
   }
 }
 @media all and (min-width: 768px) {
-  footer span {
+  .infos-general span {
     grid-area: copyright;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 0.8em;
+  }
+}
+@media all and (min-width: 950px) {
+  .infos-general {
+    flex-direction: row;
+    padding-left: 75px;
+  }
+
+  .infos-general ul {
+    margin: 5px;
+  }
+
+  .w3c {
+    margin-bottom: 5px;
   }
 }
 @media all and (min-width: 1024px) {
