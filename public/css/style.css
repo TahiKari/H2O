@@ -114,8 +114,6 @@ body {
   justify-content: flex-end;
   align-items: center;
   order: 3;
-  position: relative;
-  right: -67px;
 }
 
 .btn-don {
@@ -154,7 +152,7 @@ body {
 }
 @media all and (min-width: 950px) {
   .don {
-    margin-right: 65px;
+    order: 4;
   }
 
   .btn-don {
@@ -208,33 +206,21 @@ body {
 @media all and (min-width: 950px) {
   .btn-search {
     font-size: 1.3em;
-    right: 145px;
   }
 }
 @media all and (min-width: 1024px) {
   .btn-search {
     font-size: 1.4em;
-    right: 165px;
   }
 }
 @media all and (min-width: 1200px) {
   .btn-search {
-    position: relative;
     font-size: 1.5em;
-    top: 1.5px;
-  }
-}
-@media all and (min-width: 1440px) {
-  .btn-search {
-    top: 2px;
-    right: 200px;
   }
 }
 @media all and (min-width: 2100px) {
   .btn-search {
     font-size: 1.7em;
-    right: 210px;
-    top: -1px;
   }
 }
 /* Bouton haut de page */
@@ -300,6 +286,7 @@ header {
 
 .topbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -365,6 +352,7 @@ header {
 /* Barre de recherche et bouton recherche */
 .search {
   margin: 20px auto 0;
+  order: 4;
 }
 
 .search form {
@@ -484,17 +472,15 @@ header {
 
   .menu-desktop a {
     display: inline;
-    margin: 0 10px;
+    margin: 0 5px;
     font-weight: bold;
     font-size: 0.9em;
   }
 
   .search {
-    position: relative;
-    top: -46.5px;
-    left: 48.5%;
+    order: 3;
     width: 50px;
-    margin: 0 auto;
+    margin: 0;
   }
 
   .search form {
@@ -517,7 +503,6 @@ header {
 
   .menu-desktop a {
     font-size: 1em;
-    margin: 0 7px;
   }
 
   .search {
@@ -535,11 +520,6 @@ header {
 
   .logo img {
     width: 150px;
-  }
-
-  .menu-desktop a {
-    font-size: 1em;
-    margin: 0 15px;
   }
 
   .search {

@@ -4,8 +4,6 @@
   justify-content: flex-end;
   align-items: center;
   order: 3;
-  position: relative;
-  right: -67px;
 }
 
 .btn-don {
@@ -47,7 +45,7 @@
 
 @media all and (min-width: 950px) {
   .don {
-    margin-right: 65px;
+    order: 4;
   }
 
   .btn-don {

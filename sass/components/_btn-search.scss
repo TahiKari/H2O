@@ -30,36 +30,23 @@
 @media all and (min-width: 950px) {
   .btn-search {
     font-size: 1.3em;
-    right: 145px;
   }
 }
 
 @media all and (min-width: 1024px) {
   .btn-search {
     font-size: 1.4em;
-    right: 165px;
   }
 }
 
 @media all and (min-width: 1200px) {
   .btn-search {
-    position: relative;
     font-size: 1.5em;
-    top: 1.5px;
-  }
-}
-
-@media all and (min-width: 1440px) {
-  .btn-search {
-    top: 2px;
-    right: 200px;
   }
 }
 
 @media all and (min-width: 2100px) {
   .btn-search {
     font-size: 1.7em;
-    right: 210px;
-    top: -1px;
   }
 }
