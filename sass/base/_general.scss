@@ -47,6 +47,12 @@ ul {
 .logo:hover,
 .search a:hover,
 .pub-logo:hover,
-.back-to-top a:hover {
+.back-to-top a:hover, 
+.wc3 a:hover, footer .w3c a:hover {
   border: none;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
 }

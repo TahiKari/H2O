@@ -1,17 +1,10 @@
 /* Footer */
-footer,
-.footer-menu_infos,
-.footer-menu_presse,
-.footer-menu_faq {
-  @include flex-col-center;
-}
-
 footer {
   background: $color5;
   width: 100%;
   color: $color1;
   margin: 0;
-  padding-top: 20px;
+  padding: 50px 0 50px;
 }
 
 footer {
@@ -33,16 +26,107 @@ footer {
   }
 }
 
+footer {
+  & span {
+    grid-area: copyright;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+  }
+}
+
+.fa-copyright {
+  font-size: 0.8em;
+  padding-right: 3px;
+}
+
+.w3c {
+  margin-top: 10px;
+}
+
 @media all and (min-width: 600px) {
   footer {
-    padding: 50px 0;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-areas:
+      "footer-nav1 footer-nav2 footer-nav3"
+      "infos-site infos-site infos-site"
+      ". copyright ."
+      ". w3c .";
+      padding: 50px 0 0;
   }
+
   footer {
     & p,
     a {
       font-size: 1.1em;
+    }
+  }
+
+  .footer-menu_infos {
+    grid-area: footer-nav1;
+  }
+
+  .footer-menu_faq {
+    grid-area: footer-nav2;
+  }
+
+  .footer-menu_presse {
+    grid-area: footer-nav3;
+  }
+
+  footer {
+    & span {
+      grid-area: copyright;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.8em;
+    }
+  }
+
+  .infos-site {
+    grid-area: infos-site;
+    font-size: 0.7em;
+    margin: 0 auto;
+  }
+
+  .infos-site ul {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .infos-site li {
+    display: inline;
+    padding: 0 10px;
+  }
+
+  .infos-site li:nth-child(1), .infos-site li:nth-child(2) {
+    border-right: 1px solid $color1;
+    padding-right: 15px;
+  }
+
+  .w3c {
+    grid-area: w3c;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
+
+@media all and (min-width: 768px) {
+  footer {
+    & span {
+      grid-area: copyright;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.8em;
     }
   }
 }
@@ -52,3 +136,4 @@ footer {
     font-size: 1.3em;
   }
 }
+

@@ -238,7 +238,7 @@ header {
   .menu-desktop {
     & a {
       display: inline;
-      margin: 0 5px;
+      margin: 0 10px;
       font-weight: bold;
       font-size: 0.9em;
     }
@@ -280,6 +280,7 @@ header {
   .menu-desktop {
     & a {
       font-size: 1em;
+      margin: 0 7px;
     }
   }
 
@@ -300,6 +301,13 @@ header {
   .logo {
     & img {
       width: 150px;
+    }
+  }
+
+  .menu-desktop {
+    & a {
+      font-size: 1em;
+      margin: 0 15px;
     }
   }
 

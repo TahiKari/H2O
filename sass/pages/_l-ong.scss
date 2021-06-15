@@ -1,5 +1,10 @@
 /* Contenu page l'ong */
 .main-other-pages {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.main-other-pages {
   & h2,
   p {
     color: $color2;
@@ -134,5 +139,15 @@
 
   .center-other-pages {
     padding: 250px 20px 0;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .center-other-pages {
+    padding: 150px 50px 0;
+  }
+
+  .btm-other-pages {
+    padding: 50px 50px 0;
   }
 }
