@@ -363,7 +363,6 @@ header {
   border-radius: 25px;
   padding: 5px 0;
 }
-
 .search input {
   border: none;
   background: #455d69;
@@ -371,7 +370,6 @@ header {
   margin-left: 10px;
   width: 85%;
 }
-
 .search input::placeholder {
   color: rgba(0, 159, 227, 0.5);
 }
@@ -549,35 +547,38 @@ footer {
   width: 100%;
   color: #009fe3;
   margin: 0;
-  padding: 50px 0 50px;
+  padding: 50px 0 0;
 }
-
 footer p {
   margin-bottom: 0;
 }
-
 footer ul {
   padding: 0;
 }
-
 footer li {
   text-align: center;
   line-height: 35px;
 }
 
-.infos-general span, .infos-general a, .fa-copyright {
-  font-size: 0.8em;
+.infos-general {
+  background: #3b3c3d;
+  height: auto;
+  padding: 10px;
 }
-
 .infos-general span {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-footer i {
+.infos-general i {
   position: relative;
   top: 1.5px;
+}
+
+.infos-general span,
+.infos-general a,
+.fa-copyright {
+  font-size: 0.8em;
 }
 
 .fa-copyright {
@@ -592,11 +593,10 @@ footer i {
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: "footer-nav1 footer-nav2 footer-nav3" "infos-general infos-general infos-general";
     padding: 50px 0 0;
   }
-
   footer p,
 footer a {
     font-size: 1.1em;
@@ -614,10 +614,6 @@ footer a {
     grid-area: footer-nav3;
   }
 
-  .infos-general span {
-    font-size: 0.8em;
-  }
-
   .infos-general {
     grid-area: infos-general;
     display: flex;
@@ -625,32 +621,26 @@ footer a {
     flex-direction: column;
     align-items: center;
   }
-
+  .infos-general span {
+    font-size: 0.8em;
+  }
   .infos-general ul {
     margin-top: 0;
     width: 100%;
   }
-
   .infos-general li {
     display: inline;
     padding: 0 10px;
   }
-
-  .infos-general li:nth-child(1), .infos-general li:nth-child(2) {
+  .infos-general li:nth-child(1) {
     border-right: 1px solid #009fe3;
     padding-right: 15px;
   }
-
-  .infos-general nav {
-    grid-area: cgu;
-  }
-
-  .infos-general p {
-    grid-area: copyright;
+  .infos-general i {
+    top: 1px;
   }
 
   .w3c {
-    grid-area: w3c;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -658,7 +648,6 @@ footer a {
 }
 @media all and (min-width: 768px) {
   .infos-general span {
-    grid-area: copyright;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -668,16 +657,14 @@ footer a {
 }
 @media all and (min-width: 950px) {
   .infos-general {
+    height: auto;
     flex-direction: row;
-    padding-left: 75px;
   }
-
+  .infos-general span {
+    margin: 0 auto;
+  }
   .infos-general ul {
     margin: 5px;
-  }
-
-  .w3c {
-    margin-bottom: 5px;
   }
 }
 @media all and (min-width: 1024px) {

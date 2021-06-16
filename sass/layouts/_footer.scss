@@ -4,43 +4,42 @@ footer {
   width: 100%;
   color: $color1;
   margin: 0;
-  padding: 50px 0 50px;
-}
+  padding: 50px 0 0;
 
-footer {
   & p {
     margin-bottom: 0;
   }
-}
 
-footer {
   & ul {
     padding: 0;
   }
-}
 
-footer {
   & li {
     text-align: center;
     line-height: 35px;
   }
 }
 
-.infos-general span, .infos-general a, .fa-copyright {
-  font-size: 0.8em;
-} 
-
 .infos-general {
+  background: darken($color5, 5);
+  height: auto;
+  padding: 10px;
   & span {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+  & i {
+    position: relative;
+    top: 1.5px;
+  }
 }
 
-footer i {
-  position: relative;
-  top: 1.5px;
+.infos-general span,
+.infos-general a,
+.fa-copyright {
+  font-size: 0.8em;
 }
 
 .fa-copyright {
@@ -55,14 +54,12 @@ footer i {
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.1fr;
+    grid-template-rows: 1fr;
     grid-template-areas:
       "footer-nav1 footer-nav2 footer-nav3"
       "infos-general infos-general infos-general";
-      padding: 50px 0 0;
-  }
+    padding: 50px 0 0;
 
-  footer {
     & p,
     a {
       font-size: 1.1em;
@@ -82,44 +79,36 @@ footer i {
   }
 
   .infos-general {
-    & span {
-      font-size: 0.8em;
-    }
-  }
-
-  .infos-general {
     grid-area: infos-general;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-  }
+    & span {
+      font-size: 0.8em;
+    }
 
-  .infos-general ul {
-    margin-top: 0;
-    width: 100%;
-  }
+    & ul {
+      margin-top: 0;
+      width: 100%;
+    }
 
-  .infos-general li {
-    display: inline;
-    padding: 0 10px;
-  }
+    & li {
+      display: inline;
+      padding: 0 10px;
+    }
 
-  .infos-general li:nth-child(1), .infos-general li:nth-child(2) {
-    border-right: 1px solid $color1;
-    padding-right: 15px;
-  }
+    & li:nth-child(1) {
+      border-right: 1px solid $color1;
+      padding-right: 15px;
+    }
 
-  .infos-general nav {
-    grid-area: cgu;
-  }
-
-  .infos-general p {
-    grid-area: copyright;
+    & i {
+      top: 1px;
+    }
   }
 
   .w3c {
-    grid-area: w3c;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -129,7 +118,6 @@ footer i {
 @media all and (min-width: 768px) {
   .infos-general {
     & span {
-      grid-area: copyright;
       text-align: center;
       display: flex;
       justify-content: center;
@@ -141,16 +129,15 @@ footer i {
 
 @media all and (min-width: 950px) {
   .infos-general {
+    height: auto;
     flex-direction: row;
-    padding-left: 75px;
-  }
+    & span {
+      margin: 0 auto;
+    }
 
-  .infos-general ul {
-    margin: 5px;
-  }
-
-  .w3c {
-    margin-bottom: 5px;
+    & ul {
+      margin: 5px;
+    }
   }
 }
 
@@ -159,4 +146,3 @@ footer i {
     font-size: 1.3em;
   }
 }
-
