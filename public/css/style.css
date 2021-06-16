@@ -75,197 +75,6 @@ body {
   margin: 0;
 }
 
-/* Bouton menu */
-.btn-menu {
-  cursor: pointer;
-}
-
-.btn-menu img {
-  width: 70%;
-}
-
-.btn-menu:active {
-  transform: scale(0.9);
-}
-
-@media all and (min-width: 375px) {
-  .btn-menu img {
-    width: 80%;
-  }
-}
-@media all and (min-width: 425px) {
-  .btn-menu img {
-    width: 90%;
-  }
-}
-@media all and (min-width: 768px) {
-  .btn-menu img {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 950px) {
-  .btn-menu {
-    display: none;
-  }
-}
-/* Bouton don */
-.don {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  order: 3;
-}
-
-.btn-don {
-  display: inline-block;
-  border: 2px solid #009fe3;
-  border-radius: 40px;
-  font-size: 0.9em;
-  padding: 0.3em 0.5em 0.4em;
-  font-weight: bold;
-}
-
-.btn-don:active {
-  transform: scale(0.9);
-}
-
-.btn-don:hover {
-  background: #009fe3;
-  color: #31424a;
-  transition-duration: 0.1s;
-}
-
-@media all and (min-width: 375px) {
-  .btn-don {
-    font-size: 1em;
-  }
-}
-@media all and (min-width: 425px) {
-  .btn-don {
-    font-size: 1.1em;
-  }
-}
-@media all and (min-width: 768px) {
-  .btn-don {
-    font-size: 1.4em;
-  }
-}
-@media all and (min-width: 950px) {
-  .don {
-    order: 4;
-  }
-
-  .btn-don {
-    font-size: 1.1em;
-  }
-}
-@media all and (min-width: 1024px) {
-  .btn-don {
-    font-size: 1.3em;
-  }
-}
-@media all and (min-width: 1200px) {
-  .btn-don {
-    font-size: 1.3em;
-    position: relative;
-    top: 2px;
-  }
-}
-@media all and (min-width: 1440px) {
-  .btn-don {
-    font-size: 1.6em;
-    top: 3px;
-  }
-}
-/* Bouton search */
-.btn-search {
-  cursor: pointer;
-  font-size: 1.1em;
-  margin-right: 10px;
-}
-
-.btn-search:active {
-  transform: scale(0.9);
-}
-
-@media all and (min-width: 375px) {
-  .btn-search {
-    font-size: 1.2em;
-  }
-}
-@media all and (min-width: 425px) {
-  .btn-search {
-    font-size: 1.3em;
-  }
-}
-@media all and (min-width: 768px) {
-  .btn-search {
-    font-size: 1.6em;
-  }
-}
-@media all and (min-width: 950px) {
-  .btn-search {
-    font-size: 1.3em;
-  }
-}
-@media all and (min-width: 1024px) {
-  .btn-search {
-    font-size: 1.4em;
-  }
-}
-@media all and (min-width: 1200px) {
-  .btn-search {
-    font-size: 1.5em;
-  }
-}
-@media all and (min-width: 2100px) {
-  .btn-search {
-    font-size: 1.7em;
-  }
-}
-/* Bouton haut de page */
-.back-to-top {
-  position: fixed;
-  right: 5%;
-  bottom: 10px;
-  border-radius: 5px;
-}
-
-.fa-chevron-up {
-  font-size: 1.5em;
-  color: #7dd8ff;
-}
-
-@media all and (min-width: 768px) {
-  .back-to-top {
-    right: 2%;
-    bottom: 10px;
-  }
-
-  .fa-chevron-up {
-    font-size: 2em;
-  }
-}
-@media all and (min-width: 1024px) {
-  .fa-chevron-up {
-    font-size: 2.5em;
-  }
-}
-@media all and (min-width: 1024px) {
-  .fa-chevron-up {
-    font-size: 3em;
-  }
-}
-@media all and (min-width: 1440px) {
-  .back-to-top {
-    right: 3%;
-    bottom: 30px;
-  }
-
-  .fa-chevron-up {
-    font-size: 3.5em;
-  }
-}
 /* Header */
 .topbar,
 .menu,
@@ -432,7 +241,7 @@ header {
   }
 
   .search {
-    width: 60%;
+    width: 70%;
   }
 
   .search form {
@@ -1317,6 +1126,198 @@ h3 {
 
 .btm-event p {
   grid-area: btm-event-p;
+}
+
+/* Bouton menu */
+.btn-menu {
+  cursor: pointer;
+}
+
+.btn-menu img {
+  width: 70%;
+}
+
+.btn-menu:active {
+  transform: scale(0.9);
+}
+
+@media all and (min-width: 375px) {
+  .btn-menu img {
+    width: 80%;
+  }
+}
+@media all and (min-width: 425px) {
+  .btn-menu img {
+    width: 90%;
+  }
+}
+@media all and (min-width: 768px) {
+  .btn-menu img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .btn-menu {
+    display: none;
+  }
+}
+/* Bouton don */
+.don {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  order: 3;
+}
+
+.btn-don {
+  display: inline-block;
+  border: 2px solid #009fe3;
+  border-radius: 40px;
+  font-size: 0.9em;
+  padding: 0.3em 0.5em 0.4em;
+  font-weight: bold;
+}
+
+.btn-don:active {
+  transform: scale(0.9);
+}
+
+.btn-don:hover {
+  background: #009fe3;
+  color: #31424a;
+  transition-duration: 0.1s;
+}
+
+@media all and (min-width: 375px) {
+  .btn-don {
+    font-size: 1em;
+  }
+}
+@media all and (min-width: 425px) {
+  .btn-don {
+    font-size: 1.1em;
+  }
+}
+@media all and (min-width: 768px) {
+  .btn-don {
+    font-size: 1.4em;
+  }
+}
+@media all and (min-width: 950px) {
+  .don {
+    order: 4;
+  }
+
+  .btn-don {
+    font-size: 1.1em;
+  }
+}
+@media all and (min-width: 1024px) {
+  .btn-don {
+    font-size: 1.3em;
+  }
+}
+@media all and (min-width: 1200px) {
+  .btn-don {
+    font-size: 1.3em;
+    position: relative;
+    top: 2px;
+  }
+}
+@media all and (min-width: 1440px) {
+  .btn-don {
+    font-size: 1.6em;
+    top: 3px;
+  }
+}
+/* Bouton search */
+.btn-search {
+  cursor: pointer;
+  font-size: 1.1em;
+  margin-right: 10px;
+}
+
+.btn-search:active {
+  transform: scale(0.9);
+}
+
+@media all and (min-width: 375px) {
+  .btn-search {
+    font-size: 1.2em;
+  }
+}
+@media all and (min-width: 425px) {
+  .btn-search {
+    font-size: 1.3em;
+  }
+}
+@media all and (min-width: 768px) {
+  .btn-search {
+    font-size: 1.6em;
+  }
+}
+@media all and (min-width: 950px) {
+  .btn-search {
+    font-size: 1.3em;
+  }
+}
+@media all and (min-width: 1024px) {
+  .btn-search {
+    font-size: 1.4em;
+  }
+}
+@media all and (min-width: 1200px) {
+  .btn-search {
+    font-size: 1.5em;
+  }
+}
+@media all and (min-width: 2100px) {
+  .btn-search {
+    font-size: 1.7em;
+  }
+}
+/* Bouton haut de page */
+.back-to-top {
+  position: fixed;
+  right: 5%;
+  bottom: 10px;
+  border-radius: 5px;
+}
+
+.fa-chevron-up {
+  font-size: 1.5em;
+  color: #7dd8ff;
+}
+
+@media all and (min-width: 768px) {
+  .back-to-top {
+    right: 2%;
+    bottom: 10px;
+  }
+
+  .fa-chevron-up {
+    font-size: 2em;
+  }
+}
+@media all and (min-width: 1024px) {
+  .fa-chevron-up {
+    font-size: 2.5em;
+  }
+}
+@media all and (min-width: 1024px) {
+  .fa-chevron-up {
+    font-size: 3em;
+  }
+}
+@media all and (min-width: 1440px) {
+  .back-to-top {
+    right: 3%;
+    bottom: 30px;
+  }
+
+  .fa-chevron-up {
+    font-size: 3.5em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
