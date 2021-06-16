@@ -1,0 +1,9 @@
+.modal-header {
+  display: flex;
+  flex-wrap: wrap;
+  & p {
+    margin-top: 10px;
+    color: $color2;
+    width: 75%;
+  }
+}
