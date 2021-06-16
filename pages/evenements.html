@@ -51,8 +51,73 @@
           <a href="#">NOS RÉSULTATS</a>
           <a href="#">AGIT AVEC NOUS</a>
         </nav>
-        <div class="don">
-          <a class="btn-don" href="#">Faire un don</a>
+        <div type="button" 
+        class="don btn-don" 
+        data-bs-toggle="modal" 
+        data-bs-target="#exampleModal" 
+        data-bs-whatever="don">
+          Faire un don
+        </div>
+        <div class="modal fade" 
+        id="exampleModal" 
+        tabindex="-1" 
+        aria-labelledby="exampleModalLabel" 
+        aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Fomulaire de don</h5>
+                <button type="button" 
+                class="btn-close" 
+                data-bs-dismiss="modal" 
+                aria-label="Close"></button>
+                <p>Remplissez ce formulaire pour que nous puissions vous contacter dans les plus 
+                  brefs delais</p>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="last-name" class="col-form-label">Nom</label>
+                    <input type="text" 
+                    class="form-control" 
+                    id="last-name" 
+                    placeholder="Entrez votre Nom"
+                    required>
+
+                    <label for="first-name" class="col-form-label">Pénom</label>
+                    <input type="text" 
+                    class="form-control" 
+                    id="first-name"
+                    placeholder="Entrez votre Prénom"
+                    required>
+
+                    <label for="mail" class="col-form-label">E-mail</label>
+                    <input type="email" 
+                    class="form-control" 
+                    id="email"
+                    placeholder="Entrez votre adresse email"
+                    required>
+
+                    <label for="tel" class="col-form-label">Téléphone</label>
+                    <input type="tel" 
+                    class="form-control" 
+                    id="tel" 
+                    placeholder="Entrez votre numéro de téléphone"
+                    required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label">Message:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" 
+                data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="search">
           <form role="search" method="POST" action="search.php">
