@@ -1,9 +1,47 @@
+.modal {
+  background: lighten($color6, 35);
+}
 .modal-header {
+  background: $color3;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   & p {
     margin-top: 10px;
-    color: $color2;
-    width: 75%;
+    width: 90%;
+    color: $color5;
   }
 }
+
+.modal-content {
+  background: lighten($color6, 35);
+}
+
+.modal-footer {
+  background: $color6;
+}
+
+.btn-primary {
+  background: $color5;
+  color: $color4;
+  border: none;
+  font-weight: 700;
+}
+
+.btn-primary:hover {
+  background: $color2;
+  color: $color1;
+}
+
+.btn-secondary {
+  background: $color2;
+  color: $color1;
+  border: none;
+  font-weight: 700;
+}
+
+.btn-secondary:hover {
+  background: $color5;
+  color: $color4;
+}
+
