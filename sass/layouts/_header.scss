@@ -17,10 +17,8 @@ header {
 }
 
 .topbar {
-  display: flex;
+  @extend %flex-center-between;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
 }
 
 /* logo */
@@ -97,9 +95,7 @@ header {
 
 .search {
   & form {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @extend %flex-center-between;
     background: lighten($color2, 10);
     border-radius: 30px;
     padding: 5px 0;
