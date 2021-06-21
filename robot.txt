@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /.git
+Disallow: /maquette
+Disallow: /*scss
+Disallow: /style.css.map
+Disallow: /ressources
+Disallow: /index.php
+Disallow: /package-lock.json
+Disallow: /package.json
+Disallow: /README.md
