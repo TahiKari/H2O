@@ -1,0 +1,35 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "order",
+          "transition-duration",
+          "animation-duration",
+          "animation-name",
+          "animation-iteration-count",
+          "flex-direction",
+          "flex-wrap",
+          "-webkit-box-align",
+          "-webkit-box-orient",
+          "-webkit-box-direction",
+          "-webkit-box-pack",
+          "grid-area",
+          "perspective",
+          "transform",
+          "transition",
+          "transform-style",
+          "grid-template-columns",
+          "display: grid",
+          "grid-template-rows",
+          "grid-template-areas"
+        ]
+      }
+    ],
+    "disown-opener": "off"
+  }
+}

@@ -1,9 +1,9 @@
 {
   "name": "h2o",
   "version": "1.0.0",
-  "description": "",
+  "description": "Ceci est un TP donner par STUDI ou il nous est demander de faire un site perso coter Front-End en se servant de ce que l'on a appris dans le premier module HTML CSS BOOTSTRAP.",
   "scripts": {
-    "sass": "sass ./sass/main.scss:./public/css/style.css -w --style compressed",
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css -w --style compressed",
     "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "author": "",
@@ -17,5 +17,6 @@
     "autoprefixer": "^10.2.6",
     "postcss": "^8.3.5",
     "postcss-cli": "^8.3.1"
-  }
+  },
+  "main": "index.js"
 }

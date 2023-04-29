@@ -757,7 +757,7 @@ footer li {
     padding: 50px 0 0;
   }
   footer p,
-footer a {
+  footer a {
     font-size: 1.1em;
   }
 
@@ -1162,7 +1162,7 @@ h3 {
   }
 
   .btm-index h2,
-.btm-index span {
+  .btm-index span {
     font-size: 1.4em;
   }
 
@@ -1176,12 +1176,12 @@ h3 {
   }
 
   .btm-index h2,
-.btm-index span {
+  .btm-index span {
     font-size: 1.5em;
   }
 
   .btm-index h2,
-.btm-index span {
+  .btm-index span {
     font-size: 1.5em;
   }
 }
@@ -1224,17 +1224,17 @@ h3 {
   }
 
   .art-1,
-.art-3 {
+  .art-3 {
     padding: 0 30px 10px 50px;
   }
 
   .art-2,
-.art-4 {
+  .art-4 {
     padding: 0 50px 10px 30px;
   }
 
   .btm-index h2,
-.btm-index span {
+  .btm-index span {
     font-size: 1.8em;
   }
 
@@ -1269,7 +1269,7 @@ h3 {
   }
 
   .center,
-.card-3 {
+  .card-3 {
     width: 100%;
   }
 
@@ -1295,12 +1295,12 @@ h3 {
   }
 
   .art-1,
-.art-3 {
+  .art-3 {
     padding: 0 80px 10px 100px;
   }
 
   .art-2,
-.art-4 {
+  .art-4 {
     padding: 0 100px 10px 80px;
   }
 
@@ -1314,12 +1314,12 @@ h3 {
   }
 
   .art-1,
-.art-3 {
+  .art-3 {
     padding: 0 110px 10px 130px;
   }
 
   .art-2,
-.art-4 {
+  .art-4 {
     padding: 0 130px 10px 110px;
   }
 }
@@ -1341,12 +1341,12 @@ h3 {
   }
 
   .art-1,
-.art-3 {
+  .art-3 {
     padding: 0 150px 10px 170px;
   }
 
   .art-2,
-.art-4 {
+  .art-4 {
     padding: 0 170px 10px 150px;
   }
 
@@ -1356,7 +1356,7 @@ h3 {
 }
 @media all and (min-width: 1440px) {
   .btm-index h2,
-.btm-index span {
+  .btm-index span {
     font-size: 2em;
   }
 
@@ -1472,7 +1472,7 @@ h3 {
 }
 @media all and (min-width: 1024px) {
   .main-other-pages h2,
-.main-other-pages p {
+  .main-other-pages p {
     font-size: 1.5em;
   }
 
